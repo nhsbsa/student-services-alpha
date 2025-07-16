@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block main %}
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    cursor: pointer;
+  }
+  .fullscreen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.body.addEventListener('click', function () {
+      window.location.href = 'sign-in'; // Replace with your route
+    });
+  });
+</script>
+
+<img src="/images/WFM-detailed.png" alt="Verint Workforce management showing activity details" class="fullscreen-image">
+
+{% endblock %}

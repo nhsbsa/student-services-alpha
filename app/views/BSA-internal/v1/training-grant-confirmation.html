@@ -1,0 +1,40 @@
+{% extends 'layout-internal.html' %}
+
+{% block pageTitle %}
+Student details
+{% endblock %}
+
+{% block content %}
+<form action="student-details" method="POST">
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <span class="nhsuk-caption-l">
+      {% if data['student-number'] == "BRN0000789" %}
+        Katherine Daley - NHS Bursary
+      {% else %}
+        Benjamin Thompson - NHS Learning Support Fund
+      {% endif %}
+    </span>
+
+    <div class="nhsuk-panel">
+      <h1 class="nhsuk-panel__title">
+        Application processed
+      </h1>
+    </div>
+
+    <h2 class="nhsuk-heading-m">What happens next</h2>
+
+    <p>We've sent a confirmation email to the student.</p>
+
+    <p>We've also scheduled their payments and added a note to their record.</p>
+
+    <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+      Return to Student details
+    </button>
+
+  </div>
+</div>
+
+</form>
+{% endblock %}

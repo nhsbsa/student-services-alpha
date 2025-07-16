@@ -1,0 +1,69 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading-xl">
+        Student Services BSA Internal
+      </h1>
+
+      <details class="nhsuk-details nhsuk-expander nhsuk-u-margin-bottom-5">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text"><small>Alpha sprint 2 & 3 - Combined system for processors scenario 1</small></span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <h2 class="nhsuk-heading-l"></h2>
+
+          <hr>
+
+          <h3 class="nhsuk-heading-m">What we created:</h3>
+          <ul class="nhsuk-list nhsuk-list--bullet">
+            <li></li>
+          </ul>
+          <h3 class="nhsuk-heading-m">What we plan to test:</h3>
+          <ul class="nhsuk-list nhsuk-list--bullet">
+            <li></li>
+          </ul>
+          <h3 class="nhsuk-heading-m">What we found:</h3>
+          <ul class="nhsuk-list nhsuk-list--bullet">
+            <li></li>
+          </ul>
+          <h3 class="nhsuk-heading-m">Any known issues?</h3>
+          <ul class="nhsuk-list nhsuk-list--bullet">
+            <li></li>
+          </ul>
+          <hr>
+
+          <a class="nhsuk-button" href="v1/wfm-detailed">Processor LSF & NHS Bursary journey</a>
+
+        </div>
+      </details>
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

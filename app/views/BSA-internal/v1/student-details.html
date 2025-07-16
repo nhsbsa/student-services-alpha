@@ -1,0 +1,248 @@
+{% extends 'layout-internal.html' %}
+
+{% block pageTitle %}
+Student details
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-heading-l">
+      <span class="nhsuk-caption-l">
+        {% if data['student-number'] == "BRN0000789" %}
+          Katherine Daley - NHS Bursary
+        {% else %}
+          Benjamin Thompson - NHS Learning Support Fund
+        {% endif %}
+      </span>
+      Student details
+    </h1>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <dl class="nhsuk-summary-list">
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          {% if data['student-number'] == "BRN0000789" %}
+            Katherine Daley - NHS Bursary
+          {% else %}
+            Benjamin Thompson
+          {% endif %}
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Student reference
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          {{ data['student-number'] }}
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Phone
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          07971234567
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          54, NE1 2BC
+          <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                View full address
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+              54<br>
+              Stoddart Street<br>
+              Shieldfield<br>
+              Newcastle upon Tyne <br>
+              NE1 2BC
+            </div>
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Date of birth
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          1 January 2008
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Email
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          {% if data['student-number'] == "BRN0000789" %}
+            katd123@gmail.com
+          {% else %}
+            BenThompson@gmail.com
+          {% endif %}
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          University student ID
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          AB1234
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          SFE Number
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          1111111111
+        </dd>
+      </div>
+    </dl>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <div class="nhsuk-card">
+      <div class="nhsuk-card__content">
+        <dl class="nhsuk-u-margin-bottom-4 nhsuk-summary-list nhsuk-summary-list--no-border nhsuk-summary-list--no-actions attendance-summary">
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-u-margin-bottom-0 nhsuk-summary-list__key">
+              Attendance status
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              In attendance term 1
+            </dd>
+          </div>
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-u-margin-bottom-0 nhsuk-summary-list__key">
+              Next payment
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              12 December 2025
+            </dd>
+          </div>
+        </dl>
+        <h3 class="nhsuk-u-margin-bottom-2 nhsuk-heading-xs">
+          Actions
+        </h3>
+        <ul class="nhsuk-list">
+          <li><a href="#">View students documents</a></li>
+          <li><a href="#">Email student</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <div class="nhsuk-tabs" data-module="nhsuk-tabs">
+      <h2 class="nhsuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="nhsuk-tabs__list">
+        <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
+          <a class="nhsuk-tabs__tab" href="#tab-1">
+            Activities
+          </a>
+        </li>
+        <li class="nhsuk-tabs__list-item">
+          <a class="nhsuk-tabs__tab" href="#tab-2">
+            Notes
+          </a>
+        </li>
+        <li class="nhsuk-tabs__list-item">
+          <a class="nhsuk-tabs__tab" href="#tab-3">
+            Course details
+          </a>
+        </li>
+        <li class="nhsuk-tabs__list-item">
+          <a class="nhsuk-tabs__tab" href="#tab-4">
+            Payments
+          </a>
+        </li>
+      </ul>
+      <div class="nhsuk-tabs__panel" id="tab-1">
+        <table class="nhsuk-table">
+          <caption class="nhsuk-table__caption">Activities</caption>
+          <thead class="nhsuk-table__head">
+            <tr>
+              <th scope="col" class="nhsuk-table__header">Number</th>
+              <th scope="col" class="nhsuk-table__header">Type</th>
+              <th scope="col" class="nhsuk-table__header">Received</th>
+              <th scope="col" class="nhsuk-table__header">Due by</th>
+              <th scope="col" class="nhsuk-table__header">Action</th>
+            </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+            <tr class="nhsuk-table__row">
+              <th scope="row" class="nhsuk-table__header">9</th>
+              {% if data['student-number'] == "BRN0000789" %}
+                <td class="nhsuk-table__cell">Means tested bursary application</td>
+              {% else %}
+                <td class="nhsuk-table__cell">Training Grant application (simple)</td>
+              {% endif %}
+              <td class="nhsuk-table__cell">8 July 2025</td>
+              <td class="nhsuk-table__cell">27 July 2025</td>
+              {% if data['student-number'] == "BRN0000789" %}
+                <td class="nhsuk-table__cell"><a href="bursary-application">Process</a></td>
+              {% else %}
+                <td class="nhsuk-table__cell"><a href="training-grant">Process</a></td>
+              {% endif %}
+            </tr>
+            <tr class="nhsuk-table__row">
+              <th scope="row" class="nhsuk-table__header">14</th>
+              <td class="nhsuk-table__cell">TDAE Claim (Simple)</td>
+              <td class="nhsuk-table__cell">8 July 2025</td>
+              <td class="nhsuk-table__cell">27 July 2025</td>
+              <td class="nhsuk-table__cell"><a href="#">Process</a></td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <th scope="row" class="nhsuk-table__header">15</th>
+              <td class="nhsuk-table__cell">Change of Address</td>
+              <td class="nhsuk-table__cell">9 July 2025</td>
+              <td class="nhsuk-table__cell">28 July 2025</td>
+              <td class="nhsuk-table__cell"><a href="#">Process</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="#">View past activities</a></p>
+      </div>
+      <div class="nhsuk-tabs__panel" id="tab-2">
+      </div>
+      <div class="nhsuk-tabs__panel" id="tab-3">
+      </div>
+      <div class="nhsuk-tabs__panel" id="tab-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .attendance-summary {
+    display: block !important;
+  }
+
+  .attendance-summary .nhsuk-summary-list__row {
+    display: block !important;
+    margin-bottom: 16px; /* Match spacing between rows */
+  }
+
+  .attendance-summary .nhsuk-summary-list__key,
+  .attendance-summary .nhsuk-summary-list__value {
+    display: block !important;
+    width: 100% !important;
+  }
+</style>
+
+{% endblock %}
