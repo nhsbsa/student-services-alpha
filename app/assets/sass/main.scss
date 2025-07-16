@@ -8,4 +8,56 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-  
+
+
+/* Student Services breakdown details */
+
+@media screen and (min-width: 48.0525em) {
+    .ss-details-desktop {
+        display: block;
+        /* Show the desktop view */
+    }
+
+    .ss-details-mobile {
+        display: none !important;
+        /* Hide the mobile view */
+    }
+}
+
+@media screen and (max-width: 48.0525em) {
+    .ss-details-desktop {
+        display: none !important;
+        /* Hide the desktop view */
+    }
+
+    .ss-details-mobile {
+        display: block;
+        padding-left: 10px;
+        border-left: 4px solid #d8dde0;
+        /* Show the mobile view */
+    }
+}
+
+.ss-details-text {
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 8px;
+    border-left: 4px solid #d8dde0;
+    color: rgb(76, 98, 114);
+}
+
+.ss-details-summary-list {
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.ss-details-summary-list__key {
+    width: 80% !important;
+    text-align: left;
+}
+
+.ss-details-summary-list__value {
+    padding-right: 0px;
+}
