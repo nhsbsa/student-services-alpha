@@ -18,7 +18,7 @@ Student details
       </span>
       Student details
     </h1>
-    {% if data['user'] !== "CCS" %}<a class="nhsuk-button nhsuk-button--secondary" style="float:right;" id="lock-toggle"href="student-details?lock=unlocked">Unlock</a>{% endif %}
+    {% if data['user'] !== "CCS" %}<a class="nhsuk-button nhsuk-button--secondary" style="float:right;" id="lock-toggle"href="student-details?lock=unlocked">Lock</a>{% endif %}
   </div>
 </div>
 
@@ -31,7 +31,7 @@ Student details
         </dt>
         <dd class="nhsuk-summary-list__value">
           {% if data['student-number'] == "BRN0000789" %}
-            Katherine Daley - NHS Bursary
+            Katherine Daley
           {% else %}
             Benjamin Thompson
           {% endif %}
@@ -187,7 +187,11 @@ Student details
           </thead>
           <tbody class="nhsuk-table__body">
             <tr class="nhsuk-table__row">
-              <th scope="row" class="nhsuk-table__header">9</th>
+              {% if data['student-number'] == "BRN0000789" %}
+                <th scope="row" class="nhsuk-table__header">32</th>
+              {% else %}
+                <th scope="row" class="nhsuk-table__header">9</th>
+              {% endif %}
               {% if data['student-number'] == "BRN0000789" %}
                 <td class="nhsuk-table__cell">Means tested bursary application</td>
               {% else %}

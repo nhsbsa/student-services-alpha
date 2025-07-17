@@ -75,7 +75,21 @@ Student search
       <input class="nhsuk-input nhsuk-input--width-5" id="postcode" name="test-width-5" type="text">
     </div>
   </div>
-
+  {% if data['user'] !== "CCS" %}
+  <div class="nhsuk-grid-column-one-third">
+    <label class="nhsuk-label" for="funding">
+      Locked by me
+    </label>
+    <div class="nhsuk-radios nhsuk-radios--inline">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-checkboxes__input" id="funding-1" name="funding" type="checkbox" value="Learning Support Fund">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="funding-1">
+          <div style="visibility: hidden">Locked by me</div>
+        </label>
+      </div>
+    </div>
+  </div>
+  {% endif %}
   <div class="nhsuk-grid-column-one-third">
     <div class="nhsuk-form-group">
       <label class="nhsuk-label" for="postcode">
@@ -142,7 +156,6 @@ Student search
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <button class="nhsuk-button" type="submit">Search</button>
-      {% if data['user'] !== "CCS" %}<a class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-left-5" href="#">Locked by me</a>{% endif %}
     </div>
 </div>
 {% if data['search'] == "true" %}
