@@ -23,29 +23,40 @@
 {% block header %}
 {% from 'header/macro.njk' import header %}
 
-  {{ header({
-    "service": {
-        "name": serviceName,
-        "href": "/"
-      },
-      "showNav": "true",
-      "showSearch": "false",
-      primaryLinks: [
-      {
-        url : 'student-search',
-        label : 'Student search'
-      },
-      {
-        url  : "#",
-        "label" : "Admin menu"
-      },
-      {
-        url : '#',
-        label : 'Change password'
+<form id="student-search-form" action="v1/clear-session-and-search" method="post" style="display: none;">
+  {% if csrfToken %}
+    <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+  {% endif %}
+</form>
+
+{{ header({
+  "service": {
+    "name": serviceName,
+    "href": "/"
+  },
+  "showNav": "true",
+  "showSearch": "false",
+  primaryLinks: [
+    {
+      url : '#',
+      label : 'Student search',
+      attributes: {
+        onclick: "document.getElementById('student-search-form').submit(); return false;"
       }
-    ]
-    })
-  }}
+    },
+    {
+      url  : "#",
+      "label" : "Admin menu"
+    },
+    {
+      url : '#',
+      label : 'Change password'
+    }
+  ]
+}) }}
+
+
+
 {% endblock %}
 
 <!-- Edit the footer -->

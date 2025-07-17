@@ -1,0 +1,42 @@
+{% extends 'layout-internal.html' %}
+
+{% block pageTitle %}
+Student search
+{% endblock %}
+
+{% block content %}
+<form action="v1/user-type" method="POST">
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-heading-l">What type of user would you like to use the prototype as?</h1>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-form-group">
+        <div class="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-1" name="user" type="radio" value="CCS">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+            CCS (Read only)
+          </label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-2" name="user" type="radio" value="processor">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+            Processor
+          </label>
+        </div>
+      </div>
+    </div>
+
+      <button class="nhsuk-button" type="submit">Continue</button>
+    </div>
+</div>
+
+
+</form>
+
+{% endblock %}

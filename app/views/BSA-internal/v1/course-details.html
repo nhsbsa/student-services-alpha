@@ -23,7 +23,7 @@ Student details
       </span>
       September 2025 course details
     </h1>
-    <a class="nhsuk-button nhsuk-button--secondary" style="float:right;" id="lock-toggle"href="student-details?lock=unlocked">Unlock</a>
+    {% if data['user'] !== "CCS" %}<a class="nhsuk-button nhsuk-button--secondary" style="float:right;" id="lock-toggle"href="student-details?lock=unlocked">Unlock</a>{% endif %}
   </div>
 </div>
 
@@ -43,14 +43,14 @@ Student details
                 <p>Matched student - in attendance</p>
               </div>
             </div>
-
+            {% if data['user'] !== "CCS" %}
             <div>
               <input type="hidden" name="student.Id" id="student.Id" value="62"> <input type="hidden" name="Id" id="Id"
                 value="95">
               <button class="nhsuk-button right-float" type="submit" id="updateEnrolmentDetails" role="button"
                 disabled="disabled">Update</button>
             </div>
-
+            {% endif %}
 
           </div>
         </div>
@@ -306,9 +306,9 @@ Student details
               </tbody>
             </table>
           </div>
-          <a href="payment-details-unlocked" class="nhsuk-button" id="paymentButton" role="button">Manage
+          {% if data['user'] !== "CCS" %}<a href="payment-details-unlocked" class="nhsuk-button" id="paymentButton" role="button">Manage
             payments
-          </a>
+          </a>{% endif %}
 
         </div>
 

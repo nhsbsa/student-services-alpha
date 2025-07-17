@@ -17,7 +17,7 @@ router.post('/clear-session-data/', (req, res) => {
 // Version number variables
 // ================================
 
-// V9 Public
+// V1 BSA
 router.get('/BSA-internal/v1/:page', (req, res) => {
     const number = 'v1';
     const templatePath = `BSA-internal/v1/${req.params.page}`;
@@ -25,9 +25,6 @@ router.get('/BSA-internal/v1/:page', (req, res) => {
     res.render(templatePath, { number });
 });
 
-// ================================
-// Routes for LSF Web
-// ================================
 router.use('/BSA-internal/v1', require('./views/BSA-internal/v1/_routes'));
 
 module.exports = router;

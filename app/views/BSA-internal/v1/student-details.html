@@ -18,7 +18,7 @@ Student details
       </span>
       Student details
     </h1>
-    <a class="nhsuk-button nhsuk-button--secondary" style="float:right;" id="lock-toggle"href="student-details?lock=unlocked">Unlock</a>
+    {% if data['user'] !== "CCS" %}<a class="nhsuk-button nhsuk-button--secondary" style="float:right;" id="lock-toggle"href="student-details?lock=unlocked">Unlock</a>{% endif %}
   </div>
 </div>
 
@@ -79,7 +79,7 @@ Student details
           Date of birth
         </dt>
         <dd class="nhsuk-summary-list__value">
-          1 January 2008
+          1 January 2009
         </dd>
       </div>
       <div class="nhsuk-summary-list__row">
@@ -104,7 +104,7 @@ Student details
       </div>
       <div class="nhsuk-summary-list__row">
         <dt class="nhsuk-summary-list__key">
-          SFE Number
+          Student Finance England number
         </dt>
         <dd class="nhsuk-summary-list__value">
           1111111111
@@ -126,7 +126,7 @@ Student details
           </div>
           <div class="nhsuk-summary-list__row">
             <dt class="nhsuk-u-margin-bottom-0 nhsuk-summary-list__key">
-              Next termly payment
+              Next {% if data['student-number'] == "BRN0000789" %}bursary{% else %}Training Grant{% endif %} payment
             </dt>
             <dd class="nhsuk-summary-list__value">
               12 December 2025
@@ -137,7 +137,7 @@ Student details
           Actions
         </h3>
         <ul class="nhsuk-list">
-          <li><a href="#">View students documents</a></li>
+          <li><a href="#">View student's documents</a></li>
           <li><a href="#">Email student</a></li>
         </ul>
       </div>
@@ -182,7 +182,7 @@ Student details
               <th scope="col" class="nhsuk-table__header">Type</th>
               <th scope="col" class="nhsuk-table__header">Received</th>
               <th scope="col" class="nhsuk-table__header">Due by</th>
-              <th scope="col" class="nhsuk-table__header">Action</th>
+              {% if data['user'] !== "CCS" %}<th scope="col" class="nhsuk-table__header">Action</th>{% endif %}
             </tr>
           </thead>
           <tbody class="nhsuk-table__body">
@@ -195,26 +195,30 @@ Student details
               {% endif %}
               <td class="nhsuk-table__cell">8 July 2025</td>
               <td class="nhsuk-table__cell">27 July 2025</td>
-              {% if data['student-number'] == "BRN0000789" %}
-                <td class="nhsuk-table__cell"><a href="bursary-application">Process</a></td>
-              {% else %}
-                <td class="nhsuk-table__cell"><a href="training-grant">Process</a></td>
+              {% if data['user'] !== "CCS" %}
+                {% if data['student-number'] == "BRN0000789" %}
+                  <td class="nhsuk-table__cell"><a href="bursary-application">Process</a></td>
+                {% else %}
+                  <td class="nhsuk-table__cell"><a href="training-grant">Process</a></td>
+                {% endif %}
               {% endif %}
             </tr>
+            {% if data['student-number'] == "BRN0000789" %}
             <tr class="nhsuk-table__row">
               <th scope="row" class="nhsuk-table__header">14</th>
               <td class="nhsuk-table__cell">TDAE Claim (Simple)</td>
               <td class="nhsuk-table__cell">8 July 2025</td>
               <td class="nhsuk-table__cell">27 July 2025</td>
-              <td class="nhsuk-table__cell"><a href="#">Process</a></td>
+              {% if data['user'] !== "CCS" %}<td class="nhsuk-table__cell"><a href="#">Process</a></td>{% endif %}
             </tr>
             <tr class="nhsuk-table__row">
               <th scope="row" class="nhsuk-table__header">15</th>
               <td class="nhsuk-table__cell">Change of Address</td>
               <td class="nhsuk-table__cell">9 July 2025</td>
               <td class="nhsuk-table__cell">28 July 2025</td>
-              <td class="nhsuk-table__cell"><a href="#">Process</a></td>
+              {% if data['user'] !== "CCS" %}<td class="nhsuk-table__cell"><a href="#">Process</a></td>{% endif %}
             </tr>
+            {% endif %}
           </tbody>
         </table>
         <p><a href="#">View past activities</a></p>
@@ -390,7 +394,7 @@ Student details
                   <td role="cell" class="nhsuk-table__cell" scope="row">
                       <span class="nhsuk-table-responsive__heading">Enrolment No </span>
                       <a href="course-details">
-                          <span id="studentPayment">BRN0000259-2</span>
+                          <span id="studentPayment">{% if data['student-number'] == "BRN0000789" %}BRN0000259-2{% else %}SSRNN0000259-1{% endif %}</span>
                       </a>
                   </td>
                   <td role="cell" class="nhsuk-table__cell">
@@ -410,7 +414,7 @@ Student details
           </table>
           </div>
         </div>
-        <a class="nhsuk-button" href="#">Manage payments</a><a href="payment-schedule-history" class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-left-3" style="">View Payment schedule history</a>
+        {% if data['user'] !== "CCS" %}<a class="nhsuk-button  nhsuk-u-margin-right-3" href="#">Manage payments</a>{% endif %}<a href="payment-schedule-history" class="nhsuk-button nhsuk-button--secondary" style="">View Payment schedule history</a>
       </div>
     </div>
   </div>
