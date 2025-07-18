@@ -187,6 +187,7 @@ Student details
           </thead>
           <tbody class="nhsuk-table__body">
             <tr class="nhsuk-table__row">
+            {% if data['application'] != "completed" %}
               {% if data['student-number'] == "BRN0000789" %}
                 <th scope="row" class="nhsuk-table__header">32</th>
               {% else %}
@@ -206,6 +207,7 @@ Student details
                   <td class="nhsuk-table__cell"><a href="training-grant">Process</a></td>
                 {% endif %}
               {% endif %}
+            {% endif %}
             </tr>
             {% if data['student-number'] == "BRN0000789" %}
             <tr class="nhsuk-table__row">
