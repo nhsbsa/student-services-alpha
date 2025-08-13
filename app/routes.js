@@ -27,4 +27,15 @@ router.get('/BSA-internal/v1/:page', (req, res) => {
 
 router.use('/BSA-internal/v1', require('./views/BSA-internal/v1/_routes'));
 
+
+// V1 student
+router.get('/student/v1/:page', (req, res) => {
+    const number = 'v1';
+    const templatePath = `student/v1/${req.params.page}`;
+    res.locals.number = number;
+    res.render(templatePath, { number });
+});
+
+router.use('/student/v1', require('./views/student/v1/_routes'));
+
 module.exports = router;
