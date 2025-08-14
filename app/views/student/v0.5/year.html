@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-<form action="year" method="POST">
+<form action="course-confirmation" method="POST">
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
@@ -17,23 +17,31 @@
       <span class="nhsuk-caption-l">
         Eligibility
       </span>
-      How long is the course you are studying?
+      What are you doing in the academic year you are applying for?
     </h1>
 
     <div class="nhsuk-form-group">
       <div class="nhsuk-radios">
-  				<div class="nhsuk-radios__item">
-  					<div class="nhsuk-multiple-choice">
-  						<input type="radio" id="crsLen[0]" value="25" class="nhsuk-radios__input" name="courseLength" />
-  						<label class="nhsuk-label nhsuk-radios__label" for="crsLen[0]">3 years</label>
-  					</div>
-  				</div>
-          <div class="nhsuk-radios__item">
-  					<div class="nhsuk-multiple-choice">
-  						<input type="radio" id="crsLen[0]" value="25" class="nhsuk-radios__input" name="courseLength" />
-  						<label class="nhsuk-label nhsuk-radios__label" for="crsLen[0]">4 years</label>
-  					</div>
-  				</div>
+				<div class="nhsuk-radios__item">
+					<div class="nhsuk-multiple-choice">
+						<input type="radio" id="crsYear[0]" value="1" class="nhsuk-radios__input" name="courseYear" />
+            <label class="nhsuk-label nhsuk-radios__label" for="crsYear[0]">Year 1</label>
+					</div>
+				</div>
+
+				<div class="nhsuk-radios__item">
+					<div class="nhsuk-multiple-choice">
+						<input type="radio" id="crsYear[1]" value="2" class="nhsuk-radios__input" name="courseYear" />
+            <label class="nhsuk-label nhsuk-radios__label" for="crsYear[1]">Year 2</label>
+					</div>
+				</div>
+
+				<div class="nhsuk-radios__item">
+					<div class="nhsuk-multiple-choice">
+						<input type="radio" id="crsYear[2]" value="3" class="nhsuk-radios__input" name="courseYear" />
+            <label class="nhsuk-label nhsuk-radios__label" for="crsYear[2]">Year 3</label>
+					</div>
+				</div>
   		</div>
     </div>
 
