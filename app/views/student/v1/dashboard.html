@@ -12,7 +12,11 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
 
-      <span class="nhsuk-caption-xl">NHS Learning Support Fund - SS0000985</span>
+      {% if data['course'] == "Dentistry" or data['course'] == "Medicine and Surgery" or data['course'] == "Dental Surgery" %}
+        <span class="nhsuk-caption-xl">NHS Bursary - SS0000987</span>
+      {% else %}
+        <span class="nhsuk-caption-xl">NHS Learning Support Fund - SS0000985</span>
+      {% endif %}
       <h1 class="nhsuk-heading-xl">Student Services dashboard</h1>
 
       <ul class="nhsuk-grid-row nhsuk-card-group">

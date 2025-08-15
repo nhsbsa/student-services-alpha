@@ -17,12 +17,19 @@
         You're course is eligible for NHS Learning Support Fund
       </div>
     </div>-->
+    {% if data['course'] == "Dentistry" or data['course'] == "Medicine and Surgery" or data['course'] == "Dental Surgery" %}
+      <h1 class="nhsuk-heading-l">
+        Your course is eligible for the NHS Bursary
+      </h1>
 
-    <h1 class="nhsuk-heading-l">
-      Your course is eligible for NHS Learning Support Fund
-    </h1>
+      <p>You can <a href="https://www.nhsbsa.nhs.uk/nhs-bursary" target="_blank">find out more about the NHS Bursary (opens in a new tab)</a></p>
+    {% else %}
+      <h1 class="nhsuk-heading-l">
+        Your course is eligible for NHS Learning Support Fund
+      </h1>
 
-    <p>You can <a href="https://www.nhsbsa.nhs.uk/nhs-learning-support-fund-lsf" target="_blank">find out more about the NHS Learning Support Fund (opens in a new tab)</a></p>
+      <p>You can <a href="https://www.nhsbsa.nhs.uk/nhs-learning-support-fund-lsf" target="_blank">find out more about the NHS Learning Support Fund (opens in a new tab)</a></p>
+    {% endif %}
 
     <h2 class="nhsuk-heading-m">Creating an account</h2>
 

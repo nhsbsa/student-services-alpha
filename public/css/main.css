@@ -8578,7 +8578,7 @@ b {
 
 .autocomplete__dropdown-arrow-down {
   /* z-index: -1; */
-  display: inline-block;
+  display: none !important;
   position: absolute;
   right: 8px;
   width: 24px;

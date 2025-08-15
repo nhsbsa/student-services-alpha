@@ -4,14 +4,15 @@
 {% endblock %}
 
 {% block content %}
-<form action="full-part-time" method="POST">
+<form action="v1/course" method="POST">
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
     <div class="nhsuk-back-link nhsuk-u-padding-bottom-3 nhsuk-u-padding-top-0"> <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
         <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
           <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-        </svg>Go back</a>
+        </svg>
+        Back</a>
     </div>
     <h1 class="nhsuk-heading-l">
       <span class="nhsuk-caption-l">
@@ -20,22 +21,24 @@
       Which course are you studying?
     </h1>
 
-    <div class="autocomplete-wrapper nhsuk-form-group" id="college-group">
+    <div style="width: 66%;" class="autocomplete-wrapper nhsuk-form-group" id="course-group">
 
   		<span class="nhsuk-hint" id="formHint">For example, Adult Nursing</span>
 
-  		<select id="course" class="autocomplete-wrapper nhsuk-select nhsuk-u-width-three-quarters" aria-labelledby="uniName" aria-describedby="formHint" name="course">
-  			<option value=""></option>
+  		<select id="course" class="autocomplete-wrapper nhsuk-select" aria-labelledby="uniName" aria-describedby="formHint" name="course">
+  			<option value="" selected></option>
   			<option id="1" value="Adult Nursing">Adult Nursing</option>
-        <option id="1" value="Adult Nursing">Adult Nursing - Blended</option>
-        <option id="1" value="Adult Nursing">Child Nursing</option>
-        <option id="1" value="Adult Nursing">Child Nursing - Blended</option>
-        <option id="1" value="Adult Nursing">Dentistry</option>
-        <option id="1" value="Adult Nursing">Mental Health Nursing</option>
-        <option id="1" value="Adult Nursing">Midwifery</option>
-        <option id="1" value="Adult Nursing">Operating Department Practitioner</option>
-        <option id="1" value="Adult Nursing">Pharmacy</option>
-        <option id="1" value="Adult Nursing">Social Work</option>
+        <option id="2" value="Adult Nursing - Blended">Adult Nursing - Blended</option>
+        <option id="3" value="Child Nursing">Child Nursing</option>
+        <option id="4" value="Child Nursing - Blended">Child Nursing - Blended</option>
+        <option id="12" value="Dental Surgery">Dental Surgery</option>
+        <option id="5" value="Dentistry">Dentistry</option>
+        <option id="6" value="Medicine and Surgery">Medicine and Surgery</option>
+        <option id="7" value="Mental Health Nursing">Mental Health Nursing</option>
+        <option id="8" value="Midwifery">Midwifery</option>
+        <option id="9" value="Operating Department Practitioner">Operating Department Practitioner</option>
+        <option id="10" value="Pharmacy">Pharmacy</option>
+        <option id="11" value="Social Work">Social Work</option>
   		</select>
   	</div>
 
@@ -50,15 +53,27 @@
 {% endblock %}
 
 {% block scripts %}
-<!-- Multi select scripts -->
-<script src="/js/autocomplete2.min.js"></script>
-<script type="text/javascript">
-  // Course
-  element = document.querySelector('#course')
-  accessibleAutocomplete.enhanceSelectElement({
-    showAllValues: true,
-    selectElement: element
-  })
+<!-- Include autocomplete library -->
+<script src="autocomplete2.min.js"></script>
+
+<!-- Your patch code -->
+<script>
+  // Wait until DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    var element = document.querySelector('#course');
+
+    accessibleAutocomplete.enhanceSelectElement({
+      showAllValues: true,
+      selectElement: element,
+      defaultValue: ''
+    });
+
+    // Clear the auto-filled text from the first option
+    setTimeout(function() {
+      var acInput = document.querySelector('.autocomplete__input');
+      if (acInput) acInput.value = '';
+    }, 0);
+  });
 </script>
 
 <script>

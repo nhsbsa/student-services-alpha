@@ -27,4 +27,18 @@ router.post('/v1/get-security-code', (req, res) => {
 
 });
 
+// govonelogin security code option //
+
+router.post('/v1/course', (req, res) => {
+
+  const course = req.session.data['course']
+
+  if (course === 'Dentistry' || course === 'Medicine and Surgery' || course === 'Dental Surgery') {
+      res.redirect('/student/v1/check-course')
+  } else {
+      res.redirect('/student/v1/full-part-time')
+  }
+
+});
+
 module.exports = router;
