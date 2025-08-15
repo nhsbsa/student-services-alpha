@@ -18,17 +18,17 @@
       <span class="nhsuk-caption-l">
         Course details
       </span>
-      Which university are you attending?
+      Which university do you go to?
     </h1>
 
-    <p>This is the university you'll graduate from.</p>
+    <p>Select the university you'll graduate from.</p>
 
     <div style="width: 66%;" class="autocomplete-wrapper nhsuk-form-group" id="college-group">
 
-		<span class="nhsuk-hint" id="formHint">For example, University of Newcastle</span>
+		<span class="nhsuk-hint" id="formHint">For example, Teesside University</span>
 
 		<select id="college" class="nhsuk-select" aria-labelledby="uniName" aria-describedby="formHint" name="college.name">
-			<option value=""></option>
+			<option value="" selected></option>
 			<option id="1" value="ANGLIA RUSKIN UNIVERSITY">Anglia Ruskin University</option>
       <option id="4" value="Birmingham City University">Birmingham City University</option>
       <option id="5" value="Birmingham Metropolitan College">Birmingham Metropolitan College</option>
@@ -119,27 +119,16 @@
 {% endblock %}
 
 {% block scripts %}
-<!-- Include autocomplete library -->
-<script src="autocomplete2.min.js"></script>
-
-<!-- Your patch code -->
-<script>
-  // Wait until DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    var element = document.querySelector('#college');
-
-    accessibleAutocomplete.enhanceSelectElement({
-      showAllValues: true,
-      selectElement: element,
-      defaultValue: ''
-    });
-
-    // Clear the auto-filled text from the first option
-    setTimeout(function() {
-      var acInput = document.querySelector('.autocomplete__input');
-      if (acInput) acInput.value = '';
-    }, 0);
-  });
+<!-- Multi select scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  // Course
+  element = document.querySelector('#college')
+  accessibleAutocomplete.enhanceSelectElement({
+    autoselect: false,
+    showAllValues: true,
+    selectElement: element
+  })
 </script>
 
 <script>

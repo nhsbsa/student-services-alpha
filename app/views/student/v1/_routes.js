@@ -27,11 +27,25 @@ router.post('/v1/get-security-code', (req, res) => {
 
 });
 
-// govonelogin security code option //
+// Has the user confirmed their course details  //
+
+router.post('/v1/return-to-service', (req, res) => {
+
+  const courseDetails = req.session.data['course-details']
+
+  if (courseDetails === 'skipped') {
+      res.redirect('/student/v1/university')
+  } else {
+      res.redirect('/student/v1/dashboard')
+  }
+
+});
+
+// Course funding type skips full time part time //
 
 router.post('/v1/course', (req, res) => {
 
-  const course = req.session.data['course']
+  const course = req.session.data['course.name']
 
   if (course === 'Dentistry' || course === 'Medicine and Surgery' || course === 'Dental Surgery') {
       res.redirect('/student/v1/check-course')

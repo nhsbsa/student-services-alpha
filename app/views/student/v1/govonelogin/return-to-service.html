@@ -151,11 +151,14 @@
 
 
 
-<!-- javascript on timer to return page to in 5 seconds-->
+<form id="redirectForm" action="../v1/return-to-service" method="POST">
+  <!-- Optional hidden inputs -->
+  <!-- <input type="hidden" name="key" value="value"> -->
+</form>
+
 <script>
-  window.setTimeout(function(){
-    // Move to a new location or you can do something else
-    window.location.href = "../dashboard";
+  window.setTimeout(function() {
+    document.getElementById("redirectForm").submit();
   }, 2000);
 </script>
 

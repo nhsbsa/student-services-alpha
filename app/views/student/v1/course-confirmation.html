@@ -4,8 +4,6 @@
 {% endblock %}
 
 {% block content %}
-<form action="govonelogin/create-account" method="POST">
-
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
@@ -17,30 +15,45 @@
         You're course is eligible for NHS Learning Support Fund
       </div>
     </div>-->
-    {% if data['course'] == "Dentistry" or data['course'] == "Medicine and Surgery" or data['course'] == "Dental Surgery" %}
+    {% if data['course.name'] == "Dentistry" or data['course.name'] == "Medicine and Surgery" or data['course.name'] == "Dental Surgery" %}
       <h1 class="nhsuk-heading-l">
         Your course is eligible for the NHS Bursary
       </h1>
-
-      <p>You can <a href="https://www.nhsbsa.nhs.uk/nhs-bursary" target="_blank">find out more about the NHS Bursary (opens in a new tab)</a></p>
+      <p>This is funding for eligible medical and dental students. You can find out more about it on our <a href="https://www.nhsbsa.nhs.uk/nhs-bursary" target="_blank">NHS Bursary website (opens in a new tab)</a>.</p>
+      {% if data['course-details'] != "skipped" %}
+        <h2 class="nhsuk-heading-m">What happens next</h2>
+        <p>You'll need a {{ serviceName }} account to apply for the NHS Bursary.</p>
+        <p>You will need this to manage your details and see your payments.</p>
+      {% endif %}
     {% else %}
       <h1 class="nhsuk-heading-l">
         Your course is eligible for NHS Learning Support Fund
       </h1>
-
-      <p>You can <a href="https://www.nhsbsa.nhs.uk/nhs-learning-support-fund-lsf" target="_blank">find out more about the NHS Learning Support Fund (opens in a new tab)</a></p>
+      <p>This is funding for eligible nursing, midwifery and allied health professional students. You can find out more about it on our <a href="https://www.nhsbsa.nhs.uk/nhs-learning-support-fund-lsf" target="_blank">NHS Learning Support Fund website (opens in a new tab)</a>.</p>
+      {% if data['course-details'] != "skipped" %}
+        <h2 class="nhsuk-heading-m">What happens next</h2>
+        <p>You'll need a {{ serviceName }} account to apply for the NHS Learning Support Fund.</p>
+        <p>You will need this to manage your details and see your payments.</p>
+      {% endif %}
     {% endif %}
 
-    <h2 class="nhsuk-heading-m">Creating an account</h2>
+    {% if data['course-details'] == "skipped" %}
+    <div class="nhsuk-form-group">
+      <a href="dashboard" class="nhsuk-button" type="submit" name="next" onclick="checkSelected()" id="continue">Continue</a>
+    </div>
+    {% else %}
+    <h2 class="nhsuk-heading-m">Accessing your {{ serviceName }} account</h2>
 
-    <p>You need a GOV.UK One Login to sign in to this service. You can create one if you do not already have one.</p>
+    <p>To access your account, you need to sign in using a GOV.UK One Login. </p>
+
+    <p>You can create one if you do not already have one.</p>
 
   	<div class="nhsuk-form-group">
-  		<button class="nhsuk-button" type="submit" name="next" onclick="checkSelected()" id="continue">Start now</button>
+  		<a href="govonelogin/create-account?course-details=done" class="nhsuk-button" type="submit" name="next" onclick="checkSelected()" id="continue">Go to GOV.UK One Login</a>
     </div>
+    {% endif %}
   </div>
 </div>
-</form>
 {% endblock %}
 
 {% block scripts %}

@@ -25,7 +25,7 @@
 
   		<span class="nhsuk-hint" id="formHint">For example, Adult Nursing</span>
 
-  		<select id="course" class="autocomplete-wrapper nhsuk-select" aria-labelledby="uniName" aria-describedby="formHint" name="course">
+  		<select id="course" class="nhsuk-select" aria-labelledby="uniName" aria-describedby="formHint" name="course.name">
   			<option value="" selected></option>
   			<option id="1" value="Adult Nursing">Adult Nursing</option>
         <option id="2" value="Adult Nursing - Blended">Adult Nursing - Blended</option>
@@ -53,27 +53,16 @@
 {% endblock %}
 
 {% block scripts %}
-<!-- Include autocomplete library -->
-<script src="autocomplete2.min.js"></script>
-
-<!-- Your patch code -->
-<script>
-  // Wait until DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    var element = document.querySelector('#course');
-
-    accessibleAutocomplete.enhanceSelectElement({
-      showAllValues: true,
-      selectElement: element,
-      defaultValue: ''
-    });
-
-    // Clear the auto-filled text from the first option
-    setTimeout(function() {
-      var acInput = document.querySelector('.autocomplete__input');
-      if (acInput) acInput.value = '';
-    }, 0);
-  });
+<!-- Multi select scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  // Course
+  element = document.querySelector('#course')
+  accessibleAutocomplete.enhanceSelectElement({
+    autoselect: false,
+    showAllValues: true,
+    selectElement: element
+  })
 </script>
 
 <script>

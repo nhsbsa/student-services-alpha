@@ -12,7 +12,7 @@
       <span class="nhsuk-caption-l">
         Course details
       </span>
-      Check your answers
+      Check your course details answers
     </h1>
 
     <dl class="nhsuk-summary-list">
@@ -34,7 +34,7 @@
           Course
         </dt>
         <dd class="nhsuk-summary-list__value">
-          {{ data['course'] }}
+          {{ data['course.name'] }}
         </dd>
         <dd class="nhsuk-summary-list__actions">
           <a href="course">
@@ -42,10 +42,10 @@
           </a>
         </dd>
       </div>
-      {% if data['course'] != "Dentistry" and data['course'] != "Medicine and Surgery" and data['course'] != "Dental Surgery" %}
+      {% if data['course.name'] != "Dentistry" and data['course.name'] != "Medicine and Surgery" and data['course.name'] != "Dental Surgery" %}
       <div class="nhsuk-summary-list__row">
         <dt class="nhsuk-summary-list__key">
-          Full or part time
+          Study type
         </dt>
         <dd class="nhsuk-summary-list__value">
           Full time
