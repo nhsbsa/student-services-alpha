@@ -14,6 +14,8 @@
         </svg>
         Back</a>
     </div>
+    <fieldset class="nhsuk-fieldset" role="group">
+    <legend class="nhsuk-fieldset__legend">
     <h1 class="nhsuk-heading-l">
       <span class="nhsuk-caption-l">
         Course details
@@ -22,7 +24,6 @@
     </h1>
 
   <div class="nhsuk-form-group">
-
     <div class="nhsuk-radios">
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="full-time" name="full-part-time" type="radio" value="full time">
@@ -37,13 +38,13 @@
         </label>
       </div>
     </div>
-
   </div>
 
 	<div class="nhsuk-form-group">
 		<button class="nhsuk-button" type="submit" name="next" onclick="checkSelected()" id="continue">Continue</button>
     <p><a href="start-page">Cancel</a></p>
   </div>
+  </fieldset>
 
 </form>
 {% endblock %}
