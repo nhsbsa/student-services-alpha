@@ -72,6 +72,7 @@ Student details
               Newcastle upon Tyne <br>
               NE1 2BC
             </div>
+          </details>
         </dd>
       </div>
       <div class="nhsuk-summary-list__row">
@@ -148,281 +149,267 @@ Student details
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <div class="nhsuk-tabs" data-module="nhsuk-tabs">
-      <h2 class="nhsuk-tabs__title">
-        Contents
-      </h2>
-      <ul class="nhsuk-tabs__list">
-        <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
-          <a class="nhsuk-tabs__tab" href="#tab-1">
-            Activities
-          </a>
-        </li>
-        <li class="nhsuk-tabs__list-item">
-          <a class="nhsuk-tabs__tab" href="#tab-2">
-            Notes
-          </a>
-        </li>
-        <li class="nhsuk-tabs__list-item">
-          <a class="nhsuk-tabs__tab" href="#tab-3">
-            Course details
-          </a>
-        </li>
-        <li class="nhsuk-tabs__list-item">
-          <a class="nhsuk-tabs__tab" href="#tab-4">
-            Payments
-          </a>
-        </li>
-      </ul>
-      <div class="nhsuk-tabs__panel" id="tab-1">
-        <table class="nhsuk-table">
-          <caption class="nhsuk-table__caption">Activities</caption>
-          <thead class="nhsuk-table__head">
-            <tr>
-              <th scope="col" class="nhsuk-table__header">Number</th>
-              <th scope="col" class="nhsuk-table__header">Type</th>
-              <th scope="col" class="nhsuk-table__header">Received</th>
-              <th scope="col" class="nhsuk-table__header">Due by</th>
-              {% if data['user'] !== "CCS" %}<th scope="col" class="nhsuk-table__header">Action</th>{% endif %}
-            </tr>
-          </thead>
-          <tbody class="nhsuk-table__body">
-            <tr class="nhsuk-table__row">
-            {% if data['application'] != "completed" %}
-              {% if data['student-number'] == "BRN0000789" %}
-                <th scope="row" class="nhsuk-table__header">32</th>
-              {% else %}
-                <th scope="row" class="nhsuk-table__header">9</th>
-              {% endif %}
-              {% if data['student-number'] == "BRN0000789" %}
-                <td class="nhsuk-table__cell">Means tested bursary application</td>
-              {% else %}
-                <td class="nhsuk-table__cell">Training Grant application (simple)</td>
-              {% endif %}
-              <td class="nhsuk-table__cell">8 July 2025</td>
-              <td class="nhsuk-table__cell">27 July 2025</td>
-              {% if data['user'] !== "CCS" %}
-                {% if data['student-number'] == "BRN0000789" %}
-                  <td class="nhsuk-table__cell"><a href="bursary-application">Process</a></td>
-                {% else %}
-                  <td class="nhsuk-table__cell"><a href="training-grant">Process</a></td>
-                {% endif %}
-              {% endif %}
-            {% endif %}
-            </tr>
+  <h2 class="nhsuk-tabs__title">Contents</h2>
+
+  <ul class="nhsuk-tabs__list">
+    <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
+      <a class="nhsuk-tabs__tab" href="#tab-1">Activities</a>
+    </li>
+    <li class="nhsuk-tabs__list-item">
+      <a class="nhsuk-tabs__tab" href="#tab-2">Notes</a>
+    </li>
+    <li class="nhsuk-tabs__list-item">
+      <a class="nhsuk-tabs__tab" href="#tab-3">Course details</a>
+    </li>
+    <li class="nhsuk-tabs__list-item">
+      <a class="nhsuk-tabs__tab" href="#tab-4">Payments</a>
+    </li>
+  </ul>
+
+  <!-- Tab 1: Activities -->
+  <div class="nhsuk-tabs__panel" id="tab-1">
+    <table class="nhsuk-table">
+      <caption class="nhsuk-table__caption">Activities</caption>
+      <thead class="nhsuk-table__head">
+        <tr>
+          <th scope="col" class="nhsuk-table__header">Number</th>
+          <th scope="col" class="nhsuk-table__header">Type</th>
+          <th scope="col" class="nhsuk-table__header">Received</th>
+          <th scope="col" class="nhsuk-table__header">Due by</th>
+          {% if data['user'] !== "CCS" %}
+          <th scope="col" class="nhsuk-table__header">Action</th>
+          {% endif %}
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr class="nhsuk-table__row">
+          {% if data['application'] != "completed" %}
             {% if data['student-number'] == "BRN0000789" %}
-            <tr class="nhsuk-table__row">
-              <th scope="row" class="nhsuk-table__header">14</th>
-              <td class="nhsuk-table__cell">TDAE Claim (Simple)</td>
-              <td class="nhsuk-table__cell">8 July 2025</td>
-              <td class="nhsuk-table__cell">27 July 2025</td>
-              {% if data['user'] !== "CCS" %}<td class="nhsuk-table__cell"><a href="#">Process</a></td>{% endif %}
-            </tr>
-            <tr class="nhsuk-table__row">
-              <th scope="row" class="nhsuk-table__header">15</th>
-              <td class="nhsuk-table__cell">Change of Address</td>
-              <td class="nhsuk-table__cell">9 July 2025</td>
-              <td class="nhsuk-table__cell">28 July 2025</td>
-              {% if data['user'] !== "CCS" %}<td class="nhsuk-table__cell"><a href="#">Process</a></td>{% endif %}
-            </tr>
+              <th scope="row" class="nhsuk-table__header">32</th>
+              <td class="nhsuk-table__cell">Means tested bursary application</td>
+            {% else %}
+              <th scope="row" class="nhsuk-table__header">9</th>
+              <td class="nhsuk-table__cell">Training Grant application (simple)</td>
             {% endif %}
-          </tbody>
-        </table>
-        <p><a href="#">View past activities</a></p>
-      </div>
-      <div class="nhsuk-tabs__panel" id="tab-2">
-        <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-              <div class="nhsuk-form-group" style="clear:both; display: flow-root;">
-                <h3 class="nhsuk-heading-m" style="float: left; margin-top: 14px; margin-bottom: 0px;">Notes</h3>
-                <a href="/internal/notes/addnote?studentId=259" class="nhsuk-button" style="float: right; margin-bottom: 0px;">Add note</a>
-              </div>
-              <hr>
-            </div>
-          </div>
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-one-third">
-              <h4 class="nhsuk-heading-s"">Filter</h4>
-							<div class="nhsuk-form-group">
-								<label class="nhsuk-label visually-hidden" for="filter-notes">Filter notes</label>
-								<input class="nhsuk-input" id="example" name="filter-notes" type="text" value="">
-							</div>
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="student-name">
-                  Note type
-                </label>
-                  <div class="nhsuk-checkboxes__item nhsuk-checkboxes--small">
-                    <input class="nhsuk-checkboxes__input" id="note-filter" name="note-filter" type="checkbox" value="1">
-                    <label class="nhsuk-label nhsuk-checkboxes__label" for="note-filter">
-                    System note
-                    </label>
-                  </div>
-                  <div class="nhsuk-checkboxes__item nhsuk-checkboxes--small">
-                    <input class="nhsuk-checkboxes__input" id="note-filter-2" name="note-filter" type="checkbox" value="2">
-                    <label class="nhsuk-label nhsuk-checkboxes__label" for="note-filter-2">
-                    User note
-                    </label>
-                </div>
-              </div>
-              <div class="nhsuk-form-group">
-                <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button">
-                Apply filters
-                </button>
-              </div>
-						</div>
-            <div class="nhsuk-grid-column-two-thirds">
+            <td class="nhsuk-table__cell">8 July 2025</td>
+            <td class="nhsuk-table__cell">27 July 2025</td>
+            {% if data['user'] !== "CCS" %}
               {% if data['student-number'] == "BRN0000789" %}
-              <table id="notesTable">
-                <caption class="nhsuk-u-visually-hidden">User notes table</caption>
-                <thead role="rowgroup">
-                  <tr role="row">
-                    <th class="nhsuk-u-visually-hidden" scope="col" role="columnheader">Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr role="row">
-                    <td>
-                      <h4 class="nhsuk-heading-s">General - 27 October 2024 at 5:03pm
-                        <br> <strong class="nhsuk-tag">User note</strong>
-                      </h4>
-                      <p>The student phoned up asking about their next payment date due to financial struggles.</p>
-                      <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
-                    </td>
-                  </tr>
-                  <tr role="row">
-                    <td>
-                      <h4 class="nhsuk-heading-s">Email notification of Bursary application further evidence request sent on 23 October 2024 at 4:14pm
-                        <br><strong class="nhsuk-tag nhsuk-tag--grey">System note</strong>
-                      </h4>
-                      <p>My message here</p>
-                      <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
-                    </td>
-                  </tr>
-                  <tr role="row">
-                    <td>
-                      <h4 class="nhsuk-heading-s">Email notification of Bursary application further evidence request sent on 13 February 2025 at 3:27pm
-                        <br><strong class="nhsuk-tag nhsuk-tag--grey">System note</strong>
-                      </h4>
-                      <p>Tell us of your new relationship</p>
-                      <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
-                    </td>
-                  </tr>
-                  <tr role="row">
-                    <td>
-                      <h4 class="nhsuk-heading-s">New payments Scheduled on 16 October 2024 at 10:32am
-                        <br><strong class="nhsuk-tag nhsuk-tag--grey">System note</strong>
-                      </h4>
-                      <p>An email of type "NHS Bursary - Application Approved" has been sent</p>
-                      <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <td class="nhsuk-table__cell"><a href="bursary-application">Process</a></td>
               {% else %}
-                <p>No notes have been added.</p>
+                <td class="nhsuk-table__cell"><a href="training-grant">Process</a></td>
               {% endif %}
-            </div>
-          </div>
-      </div>
-      <div class="nhsuk-tabs__panel" id="tab-3">
-        <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-one-third">
-              <h2 class="nhsuk-heading-m">Enrolments</h2>
-            </div>
+            {% endif %}
+          {% endif %}
+        </tr>
+        {% if data['student-number'] == "BRN0000789" %}
+        <tr class="nhsuk-table__row">
+          <th scope="row" class="nhsuk-table__header">14</th>
+          <td class="nhsuk-table__cell">TDAE Claim (Simple)</td>
+          <td class="nhsuk-table__cell">8 July 2025</td>
+          <td class="nhsuk-table__cell">27 July 2025</td>
+          {% if data['user'] !== "CCS" %}
+          <td class="nhsuk-table__cell"><a href="#">Process</a></td>
+          {% endif %}
+        </tr>
+        <tr class="nhsuk-table__row">
+          <th scope="row" class="nhsuk-table__header">15</th>
+          <td class="nhsuk-table__cell">Change of Address</td>
+          <td class="nhsuk-table__cell">9 July 2025</td>
+          <td class="nhsuk-table__cell">28 July 2025</td>
+          {% if data['user'] !== "CCS" %}
+          <td class="nhsuk-table__cell"><a href="#">Process</a></td>
+          {% endif %}
+        </tr>
+        {% endif %}
+      </tbody>
+    </table>
+    <p><a href="#">View past activities</a></p>
+  </div>
 
-            <div class="nhsuk-grid-column-full">
-              <table id="enrolmentTable" class="nhsuk-table-responsive">
-                <caption class="nhsuk-u-visually-hidden">Enrolments table</caption>
-                <thead role="rowgroup" class="nhsuk-table__head">
-                  <tr role="row">
-                    <th role="columnheader" scope="col">Academic year reference</th>
-                    <th role="columnheader" scope="col">Academic year</th>
-                    <th role="columnheader" scope="col">Study year</th>
-                    <th role="columnheader" scope="col">Attendance status</th>
-                  </tr>
-                </thead>
-                <tbody class="nhsuk-table__body">
-                  <tr role="row" class="nhsuk-table__row">
-                    <td role="cell" class="nhsuk-table__cell">
-                      {% if data['student-number'] == "BRN0000789" %}
-                        <a href="course-details"><span id="enrolmentNo4">BRN0000259-2</span></a>
-                      {% else %}
-                        <a href="course-details-lsf"><span id="enrolmentNo4">SSRNN0000259-1</span></a>
-                      {% endif %}
-                    </td>
-                    <td role="cell" class="nhsuk-table__cell">September 2025</td>
-                    <td role="cell" class="nhsuk-table__cell">Course year {% if data['student-number'] == "BRN0000789" %}2{% else %}1{% endif %}</td>
-                    <td role="cell" class="nhsuk-table__cell">Matched student - in attendance</td>
-                  </tr>
-                  {% if data['student-number'] == "BRN0000789" %}
-                  <tr role="row" class="nhsuk-table__row">
-                    <td role="cell" class="nhsuk-table__cell">
-                      <span class="nhsuk-u-visually-hidden" hidden="">0000000231</span>
-                      <a href="course-details">
-                        <span id="enrolmentNo5">BRN0000259-1</span>
-                      </a>
-                    </td>
-                    <td role="cell" class="nhsuk-table__cell">September 2024</td>
-                    <td role="cell" class="nhsuk-table__cell">Course year 1</td>
-                    <td role="cell" class="nhsuk-table__cell">Matched student - in attendance</td>
-                  </tr>
-                  {% endif %}
-                </tbody>
-              </table>
-            </div>
-
-
-          </div>
-      </div>
-      <div class="nhsuk-tabs__panel" id="tab-4">
-        <!--<div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-full">
-            <div class="nhsuk-form-group" style="clear:both; display: flow-root;">
-              <h3 class="nhsuk-heading-m" style="float: left; margin-top: 14px; margin-bottom: 0px;">Payments</h3>
-              <a href="/internal/notes/addnote?studentId=259" class="nhsuk-button nhsuk-button--secondary" style="float: right; margin-bottom: 0px;">View Payment schedule history</a>
-            </div>
-            <hr>
-          </div>
-        </div>-->
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-full">
-            <table id="paymentsTable" class="nhsuk-table-responsive">
-              <caption class="">Upcoming payments</caption>
-              <thead role="rowgroup" class="nhsuk-table__head">
-              <tr role="row">
-                  <th role="columnheader" class="" scope="col" data-sort="string">Enrolment No</th>
-                  <th role="columnheader" class="" scope="col" data-sort="string">Date</th>
-                  <th role="columnheader" class="" scope="col" data-sort="int">Amount</th>
-                  <th role="columnheader" class="" scope="col">Held</th>
-              </tr>
-              </thead>
-              <tbody class="nhsuk-table__body">
-              <tr role="row" class="nhsuk-table__row">
-                  <td role="cell" class="nhsuk-table__cell" scope="row">
-                      <span class="nhsuk-table-responsive__heading">Enrolment No </span>
-                      <a href="course-details">
-                          <span id="studentPayment">{% if data['student-number'] == "BRN0000789" %}BRN0000259-2{% else %}SSRNN0000259-1{% endif %}</span>
-                      </a>
-                  </td>
-                  <td role="cell" class="nhsuk-table__cell">
-                      <span class="nhsuk-table-responsive__heading">Payment date </span>
-                      12 December 2025
-                  </td>
-                  <td role="cell" class="nhsuk-table__cell">
-                      <span class="nhsuk-table-responsive__heading">Value </span>
-                      £1,650
-                  </td>
-                  <td role="cell" class="nhsuk-table__cell">
-                      <span class="nhsuk-table-responsive__heading">Hold </span>
-                      No
-                  </td>
-              </tr>
-              </tbody>
-          </table>
-          </div>
+  <!-- Tab 2: Notes -->
+  <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="tab-2">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-form-group" style="clear:both; display: flow-root;">
+          <h3 class="nhsuk-heading-m" style="float: left; margin-top: 14px; margin-bottom: 0px;">Notes</h3>
+          <a href="/internal/notes/addnote?studentId=259" class="nhsuk-button" style="float: right; margin-bottom: 0px;">Add note</a>
         </div>
-        {% if data['user'] !== "CCS" %}<a class="nhsuk-button  nhsuk-u-margin-right-3" href="#">Manage payments</a>{% endif %}<a href="payment-schedule-history" class="nhsuk-button nhsuk-button--secondary" style="">View Payment schedule history</a>
+        <hr>
       </div>
     </div>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <h4 class="nhsuk-heading-s">Filter</h4>
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label visually-hidden" for="filter-notes">Filter notes</label>
+          <input class="nhsuk-input" id="example" name="filter-notes" type="text" value="">
+        </div>
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="student-name"> Note type </label>
+          <div class="nhsuk-checkboxes__item nhsuk-checkboxes--small">
+            <input class="nhsuk-checkboxes__input" id="note-filter" name="note-filter" type="checkbox" value="1">
+            <label class="nhsuk-label nhsuk-checkboxes__label" for="note-filter"> System note </label>
+          </div>
+          <div class="nhsuk-checkboxes__item nhsuk-checkboxes--small">
+            <input class="nhsuk-checkboxes__input" id="note-filter-2" name="note-filter" type="checkbox" value="2">
+            <label class="nhsuk-label nhsuk-checkboxes__label" for="note-filter-2"> User note </label>
+          </div>
+        </div>
+        <div class="nhsuk-form-group">
+          <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button"> Apply filters </button>
+        </div>
+      </div>
+      <div class="nhsuk-grid-column-two-thirds">
+        {% if data['student-number'] == "BRN0000789" %}
+        <table id="notesTable">
+          <caption class="nhsuk-u-visually-hidden">User notes table</caption>
+          <thead role="rowgroup">
+            <tr role="row">
+              <th class="nhsuk-u-visually-hidden" scope="col" role="columnheader">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr role="row">
+              <td>
+                <h4 class="nhsuk-heading-s">General - 27 October 2024 at 5:03pm <br>
+                  <strong class="nhsuk-tag">User note</strong>
+                </h4>
+                <p>The student phoned up asking about their next payment date due to financial struggles.</p>
+                <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td>
+                <h4 class="nhsuk-heading-s">Email notification of Bursary application further evidence request sent on 23 October 2024 at 4:14pm <br>
+                  <strong class="nhsuk-tag nhsuk-tag--grey">System note</strong>
+                </h4>
+                <p>My message here</p>
+                <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td>
+                <h4 class="nhsuk-heading-s">Email notification of Bursary application further evidence request sent on 13 February 2025 at 3:27pm <br>
+                  <strong class="nhsuk-tag nhsuk-tag--grey">System note</strong>
+                </h4>
+                <p>Tell us of your new relationship</p>
+                <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td>
+                <h4 class="nhsuk-heading-s">New payments Scheduled on 16 October 2024 at 10:32am <br>
+                  <strong class="nhsuk-tag nhsuk-tag--grey">System note</strong>
+                </h4>
+                <p>An email of type "NHS Bursary - Application Approved" has been sent</p>
+                <p class="nhsuk-hint">Last modified by <strong>John Smith</strong></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        {% else %}
+        <p>No notes have been added.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: Course details -->
+  <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="tab-3">
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">Enrolments</h2>
+        </div>
+
+        <div class="nhsuk-grid-column-full">
+          <table id="enrolmentTable" class="nhsuk-table-responsive">
+            <caption class="nhsuk-u-visually-hidden">Enrolments table</caption>
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" scope="col">Academic year reference</th>
+                <th role="columnheader" scope="col">Academic year</th>
+                <th role="columnheader" scope="col">Study year</th>
+                <th role="columnheader" scope="col">Attendance status</th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  {% if data['student-number'] == "BRN0000789" %}
+                    <a href="course-details"><span id="enrolmentNo4">BRN0000259-2</span></a>
+                  {% else %}
+                    <a href="course-details-lsf"><span id="enrolmentNo4">SSRNN0000259-1</span></a>
+                  {% endif %}
+                </td>
+                <td role="cell" class="nhsuk-table__cell">September 2025</td>
+                <td role="cell" class="nhsuk-table__cell">Course year {% if data['student-number'] == "BRN0000789" %}2{% else %}1{% endif %}</td>
+                <td role="cell" class="nhsuk-table__cell">Matched student - in attendance</td>
+              </tr>
+              {% if data['student-number'] == "BRN0000789" %}
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-u-visually-hidden" hidden="">0000000231</span>
+                  <a href="course-details">
+                    <span id="enrolmentNo5">BRN0000259-1</span>
+                  </a>
+                </td>
+                <td role="cell" class="nhsuk-table__cell">September 2024</td>
+                <td role="cell" class="nhsuk-table__cell">Course year 1</td>
+                <td role="cell" class="nhsuk-table__cell">Matched student - in attendance</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+  </div>
+
+  <!-- Tab 4: Payments -->
+  <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="tab-4">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <table id="paymentsTable" class="nhsuk-table-responsive">
+          <caption class="">Upcoming payments</caption>
+          <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+              <th role="columnheader" class="" scope="col" data-sort="string">Enrolment No</th>
+              <th role="columnheader" class="" scope="col" data-sort="string">Date</th>
+              <th role="columnheader" class="" scope="col" data-sort="int">Amount</th>
+              <th role="columnheader" class="" scope="col">Held</th>
+          </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell" scope="row">
+                  <span class="nhsuk-table-responsive__heading">Enrolment No </span>
+                  <a href="course-details">
+                      <span id="studentPayment">{% if data['student-number'] == "BRN0000789" %}BRN0000259-2{% else %}SSRNN0000259-1{% endif %}</span>
+                  </a>
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Payment date </span>
+                  12 December 2025
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Value </span>
+                  £1,650
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Hold </span>
+                  No
+              </td>
+          </tr>
+          </tbody>
+      </table>
+      </div>
+    </div>
+    {% if data['user'] !== "CCS" %}<a class="nhsuk-button  nhsuk-u-margin-right-3" href="#">Manage payments</a>{% endif %}<a href="payment-schedule-history" class="nhsuk-button nhsuk-button--secondary" style="">View Payment schedule history</a>
+
+  </div>
+</div>
   </div>
 </div>
 
@@ -443,22 +430,26 @@ Student details
   }
 </style>
 
+{% endblock %}
+
+{% block pageScripts %}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const lockButton = document.getElementById('lock-toggle');
 
-    lockButton.addEventListener('click', function(event) {
-      event.preventDefault();
+    if (lockButton) {
+      lockButton.addEventListener('click', function(event) {
+        event.preventDefault();
 
-      if (lockButton.textContent.trim() === 'Unlock') {
-        lockButton.textContent = 'Lock';
-        lockButton.href = 'student-details?lock=locked';
-      } else {
-        lockButton.textContent = 'Unlock';
-        lockButton.href = 'student-details?lock=unlocked';
-      }
-    });
+        if (lockButton.textContent.trim() === 'Unlock') {
+          lockButton.textContent = 'Lock';
+          lockButton.href = 'student-details?lock=locked';
+        } else {
+          lockButton.textContent = 'Unlock';
+          lockButton.href = 'student-details?lock=unlocked';
+        }
+      });
+    }
   });
 </script>
-
 {% endblock %}

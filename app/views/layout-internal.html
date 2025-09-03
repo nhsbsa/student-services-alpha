@@ -10,7 +10,6 @@
 {% block head %}
   <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
   <link href="/css/main.css" rel="stylesheet">
-  <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
 {% endblock %}
 
 <!-- Set the page title -->
@@ -30,33 +29,42 @@
 </form>
 
 {{ header({
-  "service": {
-    "name": serviceName,
-    "href": "/"
+  logo: {
+    href: "/",
+    ariaLabel: "NHS.UK homepage"
   },
-  "showNav": "true",
-  "showSearch": "false",
-  primaryLinks: [
-    {
-      url : '#',
-      label : 'Student search',
-      attributes: {
-        onclick: "document.getElementById('student-search-form').submit(); return false;"
+  service: {
+    text: "Student Services",
+    href: "/"
+  },
+  account: {
+    items: [
+      {
+        text: "Florence Nightingale",
+        icon: true
+      },
+      {
+        text: "Log out",
+        href: "#"
       }
-    },
-    {
-      url  : "#",
-      "label" : "Admin menu"
-    },
-    {
-      url : '#',
-      label : 'Change password'
-    }
-  ]
+    ]
+  },
+  navigation: {
+    items: [
+      {
+        text: "Student search",
+        href: "dashboard",
+        attributes: {
+          onclick: "document.getElementById('student-search-form').submit(); return false;"
+        }
+      },
+      {
+        text: "Admin menu",
+        href: "#"
+      }
+    ]
+  }
 }) }}
-
-
-
 {% endblock %}
 
 <!-- Edit the footer -->
@@ -82,9 +90,7 @@
 
 {% block bodyEnd %}
   {% block scripts %}
-    <!-- Custom JavaScript files can be added to this file -->
     {% include "includes/scripts.html" %}
-    <!-- For adding page specific JavsScript -->
     {% block pageScripts %}{% endblock %}
   {% endblock %}
 {% endblock %}

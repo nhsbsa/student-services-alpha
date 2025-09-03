@@ -10,7 +10,6 @@
 {% block head %}
   <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
   <link href="/css/main.css" rel="stylesheet">
-  <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
 {% endblock %}
 
 <!-- Set the page title -->
@@ -21,15 +20,18 @@
 <!-- Edit the header -->
 <!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
+  {% from 'header/macro.njk' import header %}
+
   {{ header({
-    "service": {
-        "name": serviceName,
-        "href": "/"
-      },
-      "showNav": "false",
-      "showSearch": "false"
-    })
-  }}
+    logo: {
+      href: "/",
+      ariaLabel: "NHS.UK homepage"
+    },
+    service: {
+      text: "Student Services",
+      href: "/"
+    }
+  }) }}
 {% endblock %}
 
 <!-- Edit the footer -->
@@ -55,9 +57,7 @@
 
 {% block bodyEnd %}
   {% block scripts %}
-    <!-- Custom JavaScript files can be added to this file -->
     {% include "includes/scripts.html" %}
-    <!-- For adding page specific JavsScript -->
     {% block pageScripts %}{% endblock %}
   {% endblock %}
 {% endblock %}
