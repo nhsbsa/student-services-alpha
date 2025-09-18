@@ -1,0 +1,269 @@
+
+9css:S125ºK"Remove this commented out code.(âò•üÿÿÿÿ
+4css:S125áK"Remove this commented out code.(Ô´¬Û
+9css:S125õK"Remove this commented out code.(Şá…ûÿÿÿÿ
+4css:S125ïL"Remove this commented out code.(ßÎÔ
+4css:S125…M"Remove this commented out code.(¢¢Ø¬
+3	css:S4656ô!"Unexpected duplicate "border"(Îâæâ
+3	css:S4656ï'"Unexpected duplicate "border"(Îâæâ
+3	css:S4656ÀD"Unexpected duplicate "border"(Îâæâ
+3	css:S4656ŒH"Unexpected duplicate "border"(®­¶¶
+R	css:S4666ø"<Unexpected duplicate selector "html", first used at line 100(óàÂ
+R	css:S4666"<Unexpected duplicate selector "html", first used at line 100(óàÂ
+S	css:S4666£"=Unexpected duplicate selector "table", first used at line 285(úíÀò
+m	css:S4666Â"WUnexpected duplicate selector "th,
+td", first used at line 314 (no-duplicate-selectors)(òœ…ñ
+m	css:S4666Ø"WUnexpected duplicate selector "th,
+td", first used at line 314 (no-duplicate-selectors)(òœ…ñ
+m	css:S4666ã"WUnexpected duplicate selector "th,
+td", first used at line 314 (no-duplicate-selectors)(òœ…ñ
+m	css:S4666î"WUnexpected duplicate selector "th,
+td", first used at line 314 (no-duplicate-selectors)(òœ…ñ
+Z	css:S4666†"?Unexpected duplicate selector "caption", first used at line 386(„Ëõûøÿÿÿÿ
+Z	css:S4666Š"?Unexpected duplicate selector "caption", first used at line 386(„Ëõûøÿÿÿÿ
+f	css:S4666¥"KUnexpected duplicate selector ".nhsuk-button-group", first used at line 415(“…³Éüÿÿÿÿ
+•	css:S4666º"ùUnexpected duplicate selector ".nhsuk-button-group .nhsuk-body,
+.nhsuk-button-group .nhsuk-body-m,
+.nhsuk-button-group p,
+.nhsuk-button-group > .nhsuk-link,
+.nhsuk-button-group > a:not(.nhsuk-button)", first used at line 430 (no-duplicate-selectors)(ÀïÂšşÿÿÿÿ
+•	css:S4666Â"ùUnexpected duplicate selector ".nhsuk-button-group .nhsuk-body,
+.nhsuk-button-group .nhsuk-body-m,
+.nhsuk-button-group p,
+.nhsuk-button-group > .nhsuk-link,
+.nhsuk-button-group > a:not(.nhsuk-button)", first used at line 430 (no-duplicate-selectors)(ÀïÂšşÿÿÿÿ
+f	css:S4666’"KUnexpected duplicate selector "ol, ul, .nhsuk-list", first used at line 780(ÕïÖüÿÿÿÿ
+f	css:S4666¥"KUnexpected duplicate selector "ol, ul, .nhsuk-list", first used at line 780(ÕïÖüÿÿÿÿ
+Ç	css:S4666²"«Unexpected duplicate selector "ol ol, ul ol, ol ul, ul ul, .nhsuk-list ol, .nhsuk-list ul, ol .nhsuk-list, ul .nhsuk-list, .nhsuk-list .nhsuk-list", first used at line 814(“Ú°µşÿÿÿÿ
+k	css:S4666°"PUnexpected duplicate selector ".nhsuk-section-break--xl", first used at line 935(‹šÆúüÿÿÿÿ
+i	css:S4666Â"SUnexpected duplicate selector "hr, .nhsuk-section-break--l", first used at line 953(šÀÿñ
+d	css:S4666Ô"OUnexpected duplicate selector ".nhsuk-section-break--m", first used at line 971(”É×
+|	css:S4666é"fUnexpected duplicate selector "h1,
+.nhsuk-heading-xl", first used at line 994 (no-duplicate-selectors)(ìØş—
+|	css:S4666ÿ"fUnexpected duplicate selector "h1,
+.nhsuk-heading-xl", first used at line 994 (no-duplicate-selectors)(ìØş—
+|	css:S4666‘"fUnexpected duplicate selector "h2,
+.nhsuk-heading-l", first used at line 1034 (no-duplicate-selectors)(Åı¨
+|	css:S4666§"fUnexpected duplicate selector "h2,
+.nhsuk-heading-l", first used at line 1034 (no-duplicate-selectors)(Åı¨
+|	css:S4666¹"fUnexpected duplicate selector "h3,
+.nhsuk-heading-m", first used at line 1074 (no-duplicate-selectors)(ˆÉëë
+|	css:S4666Ï"fUnexpected duplicate selector "h3,
+.nhsuk-heading-m", first used at line 1074 (no-duplicate-selectors)(ˆÉëë
+	css:S4666á"fUnexpected duplicate selector "h4,
+.nhsuk-heading-s", first used at line 1114 (no-duplicate-selectors)(ƒŸûÿÿÿÿ
+	css:S4666÷"fUnexpected duplicate selector "h4,
+.nhsuk-heading-s", first used at line 1114 (no-duplicate-selectors)(ƒŸûÿÿÿÿ
+}	css:S4666‰	"gUnexpected duplicate selector "h5,
+.nhsuk-heading-xs", first used at line 1154 (no-duplicate-selectors)(ú¹¹û
+}	css:S4666Ÿ	"gUnexpected duplicate selector "h5,
+.nhsuk-heading-xs", first used at line 1154 (no-duplicate-selectors)(ú¹¹û
+ƒ	css:S4666±	"hUnexpected duplicate selector "h6,
+.nhsuk-heading-xxs", first used at line 1194 (no-duplicate-selectors)(­Áºùÿÿÿÿ
+ƒ	css:S4666Ç	"hUnexpected duplicate selector "h6,
+.nhsuk-heading-xxs", first used at line 1194 (no-duplicate-selectors)(­Áºùÿÿÿÿ
+e	css:S4666Ø	"JUnexpected duplicate selector ".nhsuk-caption-xl", first used at line 1234(ÅƒïÍÿÿÿÿÿ
+e	css:S4666Ü	"JUnexpected duplicate selector ".nhsuk-caption-xl", first used at line 1234(ÅƒïÍÿÿÿÿÿ
+d	css:S4666õ	"IUnexpected duplicate selector ".nhsuk-caption-l", first used at line 1263(˜‰–œşÿÿÿÿ
+d	css:S4666ù	"IUnexpected duplicate selector ".nhsuk-caption-l", first used at line 1263(˜‰–œşÿÿÿÿ
+d	css:S4666‘
+"IUnexpected duplicate selector ".nhsuk-caption-m", first used at line 1292(ò–§üÿÿÿÿ
+d	css:S4666•
+"IUnexpected duplicate selector ".nhsuk-caption-m", first used at line 1292(ò–§üÿÿÿÿ
+\	css:S4666²
+"FUnexpected duplicate selector ".nhsuk-body-l", first used at line 1325(±œ“˜
+\	css:S4666Å
+"FUnexpected duplicate selector ".nhsuk-body-l", first used at line 1325(±œ“˜
+†	css:S4666Ô
+"kUnexpected duplicate selector "address, p,
+.nhsuk-body-m", first used at line 1358 (no-duplicate-selectors)(£×ª´ÿÿÿÿÿ
+†	css:S4666ê
+"kUnexpected duplicate selector "address, p,
+.nhsuk-body-m", first used at line 1358 (no-duplicate-selectors)(£×ª´ÿÿÿÿÿ
+\	css:S4666ÿ
+"FUnexpected duplicate selector ".nhsuk-body-s", first used at line 1402(¢ç¦
+\	css:S4666’"FUnexpected duplicate selector ".nhsuk-body-s", first used at line 1402(¢ç¦
+_	css:S4666£"IUnexpected duplicate selector ".nhsuk-lede-text", first used at line 1439(ÀÃ¬
+_	css:S4666¶"IUnexpected duplicate selector ".nhsuk-lede-text", first used at line 1439(ÀÃ¬
+”	css:S4666Ä"yUnexpected duplicate selector ".nhsuk-lede-text p,
+.nhsuk-lede-text ul", first used at line 1471 (no-duplicate-selectors)(Â›ïáúÿÿÿÿ
+f	css:S4666Ş"PUnexpected duplicate selector ".nhsuk-lede-text--small", first used at line 1498(õ¤õƒ
+f	css:S4666ñ"PUnexpected duplicate selector ".nhsuk-lede-text--small", first used at line 1498(õ¤õƒ
+a	css:S4666¸"KUnexpected duplicate selector ".nhsuk-action-link", first used at line 3373(é—äö
+a	css:S4666¼"KUnexpected duplicate selector ".nhsuk-action-link", first used at line 3373(é—äö
+a	css:S4666Ó"KUnexpected duplicate selector ".nhsuk-action-link", first used at line 3408(é—äö
+a	css:S4666€"KUnexpected duplicate selector ".nhsuk-action-link", first used at line 3373(é—äö
+d	css:S4666ë"IUnexpected duplicate selector ".nhsuk-back-link", first used at line 3553(ÕÍø„ÿÿÿÿÿ
+d	css:S4666ï"IUnexpected duplicate selector ".nhsuk-back-link", first used at line 3553(ÕÍø„ÿÿÿÿÿ
+d	css:S4666‚"IUnexpected duplicate selector ".nhsuk-back-link", first used at line 3553(ÕÍø„ÿÿÿÿÿ
+l	css:S4666¶"QUnexpected duplicate selector ".nhsuk-back-link:visited", first used at line 3595(üÑêÚùÿÿÿÿ
+x	css:S4666º"]Unexpected duplicate selector ".nhsuk-back-link:visited .nhsuk-icon", first used at line 3599(€Ğõ„ÿÿÿÿÿ
+d	css:S4666¾"IUnexpected duplicate selector ".nhsuk-back-link", first used at line 3553(ÕÍø„ÿÿÿÿÿ
+e	css:S4666¢"JUnexpected duplicate selector ".nhsuk-breadcrumb", first used at line 3742(î›ÚÊıÿÿÿÿ
+f	css:S4666Å"PUnexpected duplicate selector ".nhsuk-breadcrumb__list", first used at line 3769(…Æ‚Š
+f	css:S4666É"PUnexpected duplicate selector ".nhsuk-breadcrumb__list", first used at line 3769(…Æ‚Š
+f	css:S4666"PUnexpected duplicate selector ".nhsuk-breadcrumb__link", first used at line 3851(Çÿ«å
+f	css:S4666“"PUnexpected duplicate selector ".nhsuk-breadcrumb__link", first used at line 3851(Çÿ«å
+a	css:S4666—"FUnexpected duplicate selector ".nhsuk-button", first used at line 3972(ùÊ¼…ıÿÿÿÿ
+a	css:S4666›"FUnexpected duplicate selector ".nhsuk-button", first used at line 3972(ùÊ¼…ıÿÿÿÿ
+a	css:S4666®"FUnexpected duplicate selector ".nhsuk-button", first used at line 3972(ùÊ¼…ıÿÿÿÿ
+	css:S4666â"Unexpected duplicate selector ".nhsuk-button:focus:not(:active), .nhsuk-button:focus:not(:active):hover", first used at line 4051(Ê– ¬ıÿÿÿÿ
+Z	css:S4666ú "DUnexpected duplicate selector ".nhsuk-card", first used at line 4202(éÃˆú
+h	css:S4666€""MUnexpected duplicate selector ".nhsuk-card--feature", first used at line 4336(Ÿ÷¡éûÿÿÿÿ
+h	css:S4666""MUnexpected duplicate selector ".nhsuk-card--feature", first used at line 4336(Ÿ÷¡éûÿÿÿÿ
+h	css:S4666˜""MUnexpected duplicate selector ".nhsuk-card--feature", first used at line 4336(Ÿ÷¡éûÿÿÿÿ
+l	css:S4666¯""VUnexpected duplicate selector ".nhsuk-card__heading--feature", first used at line 4385(Ÿâíì
+s	css:S4666ğ""]Unexpected duplicate selector ".nhsuk-card--care__heading-container", first used at line 4457(ğªÛ÷
+s	css:S4666ù""]Unexpected duplicate selector ".nhsuk-card--care__heading-container", first used at line 4457(ğªÛ÷
+i	css:S4666‡#"SUnexpected duplicate selector ".nhsuk-card--care__heading", first used at line 4482(©« ¡
+i	css:S4666‹#"SUnexpected duplicate selector ".nhsuk-card--care__heading", first used at line 4482(©« ¡
+x	css:S4666Ò$"bUnexpected duplicate selector ".nhsuk-card__content--primary .nhsuk-icon", first used at line 4679(é½åÁ
+\	css:S4666³%"GUnexpected duplicate selector ".nhsuk-details", first used at line 4777(–Ÿœj
+\	css:S4666Æ%"GUnexpected duplicate selector ".nhsuk-details", first used at line 4777(–Ÿœj
+k	css:S4666æ%"UUnexpected duplicate selector ".nhsuk-details__summary-text", first used at line 4834(‹Ñÿ
+x	css:S4666Ë&"]Unexpected duplicate selector ".nhsuk-expander .nhsuk-details__text", first used at line 4933(Š¸­Òøÿÿÿÿ
+x	css:S4666Ô&"]Unexpected duplicate selector ".nhsuk-expander .nhsuk-details__text", first used at line 4933(Š¸­Òøÿÿÿÿ
+x	css:S4666İ&"]Unexpected duplicate selector ".nhsuk-expander .nhsuk-details__text", first used at line 4933(Š¸­Òøÿÿÿÿ
+x	css:S4666æ&"]Unexpected duplicate selector ".nhsuk-expander .nhsuk-details__text", first used at line 4933(Š¸­Òøÿÿÿÿ
+{	css:S4666ø&"eUnexpected duplicate selector ".nhsuk-expander .nhsuk-details__summary-text", first used at line 4980(„û˜Ì
+b	css:S4666û'"LUnexpected duplicate selector ".nhsuk-do-dont-list", first used at line 5099(É¬°‘
+b	css:S4666Š("LUnexpected duplicate selector ".nhsuk-do-dont-list", first used at line 5099(É¬°‘
+b	css:S4666“("LUnexpected duplicate selector ".nhsuk-do-dont-list", first used at line 5099(É¬°‘
+i	css:S4666´("SUnexpected duplicate selector ".nhsuk-do-dont-list__label", first used at line 5158(ü´â
+h	css:S4666â("MUnexpected duplicate selector ".nhsuk-error-message", first used at line 5211(›ú¶Õıÿÿÿÿ
+h	css:S4666æ("MUnexpected duplicate selector ".nhsuk-error-message", first used at line 5211(›ú¶Õıÿÿÿÿ
+c	css:S4666ÿ("MUnexpected duplicate selector ".nhsuk-error-summary", first used at line 5242(¨°Ã
+j	css:S4666œ)"TUnexpected duplicate selector ".nhsuk-error-summary__title", first used at line 5272(‹Ï–
+j	css:S4666 )"TUnexpected duplicate selector ".nhsuk-error-summary__title", first used at line 5272(‹Ï–
+j	css:S4666³)"TUnexpected duplicate selector ".nhsuk-error-summary__title", first used at line 5272(‹Ï–
+n	css:S4666À)"SUnexpected duplicate selector ".nhsuk-error-summary__body", first used at line 5308(ÚÆõ¾øÿÿÿÿ
+k	css:S4666×)"UUnexpected duplicate selector ".nhsuk-error-summary__body p", first used at line 5331(¬™ô„
+f	css:S4666’*"PUnexpected duplicate selector ".nhsuk-fieldset__legend", first used at line 5383(İ‚Ğ
+f	css:S4666–*"PUnexpected duplicate selector ".nhsuk-fieldset__legend", first used at line 5383(İ‚Ğ
+j	css:S4666­*"TUnexpected duplicate selector ".nhsuk-fieldset__legend--xl", first used at line 5417(ÀĞ”Ã
+j	css:S4666±*"TUnexpected duplicate selector ".nhsuk-fieldset__legend--xl", first used at line 5417(ÀĞ”Ã
+n	css:S4666È*"SUnexpected duplicate selector ".nhsuk-fieldset__legend--l", first used at line 5444(´ÊÚËşÿÿÿÿ
+n	css:S4666Ì*"SUnexpected duplicate selector ".nhsuk-fieldset__legend--l", first used at line 5444(´ÊÚËşÿÿÿÿ
+n	css:S4666ã*"SUnexpected duplicate selector ".nhsuk-fieldset__legend--m", first used at line 5471(•—³ÿÿÿÿÿ
+n	css:S4666ç*"SUnexpected duplicate selector ".nhsuk-fieldset__legend--m", first used at line 5471(•—³ÿÿÿÿÿ
+n	css:S4666ş*"SUnexpected duplicate selector ".nhsuk-fieldset__legend--s", first used at line 5498(«û«Áıÿÿÿÿ
+n	css:S4666‚+"SUnexpected duplicate selector ".nhsuk-fieldset__legend--s", first used at line 5498(«û«Áıÿÿÿÿ
+\	css:S4666¦+"FUnexpected duplicate selector ".nhsuk-footer", first used at line 5532(ÙıÖ
+\	css:S4666¯+"FUnexpected duplicate selector ".nhsuk-footer", first used at line 5532(ÙıÖ
+g	css:S4666Æ+"QUnexpected duplicate selector ".nhsuk-footer__list-item", first used at line 5570(Œš¿
+~	css:S4666â+"hUnexpected duplicate selector ".nhsuk-footer__navigation + .nhsuk-footer__meta", first used at line 5598(„Æ˜Ï
+o	css:S4666­,"TUnexpected duplicate selector ".nhsuk-header__service-name", first used at line 5667(–ˆŸÊıÿÿÿÿ
+o	css:S4666±,"TUnexpected duplicate selector ".nhsuk-header__service-name", first used at line 5667(–ˆŸÊıÿÿÿÿ
+¯	css:S4666Ç-"˜Unexpected duplicate selector ".nhsuk-header__service-logo:focus, .nhsuk-header__service-logo:focus:visited,
+.nhsuk-header__service-name[href]:focus,
+.nhsuk-header__service-name[href]:focus:visited,
+.nhsuk-header__account-button:focus,
+.nhsuk-header__account-button:focus:visited,
+.nhsuk-header__account-link:focus,
+.nhsuk-header__account-link:focus:visited", first used at line 5789 (no-duplicate-selectors)(´’”ı
+o	css:S4666."TUnexpected duplicate selector ".nhsuk-header__account-item", first used at line 5894(Üœ´òûÿÿÿÿ
+o	css:S4666”."TUnexpected duplicate selector ".nhsuk-header__account-item", first used at line 5894(Üœ´òûÿÿÿÿ
+l	css:S4666¿."VUnexpected duplicate selector ".nhsuk-header__account-button", first used at line 5944(û«åá
+l	css:S4666Ã."VUnexpected duplicate selector ".nhsuk-header__account-button", first used at line 5944(û«åá
+v	css:S4666ü."`Unexpected duplicate selector ".nhsuk-header__search-input.nhsuk-input", first used at line 6002(ÀÖ³“
+r	css:S4666–0"WUnexpected duplicate selector ".nhsuk-header__navigation-link", first used at line 6159(©Â‹Êşÿÿÿÿ
+r	css:S4666š0"WUnexpected duplicate selector ".nhsuk-header__navigation-link", first used at line 6159(©Â‹Êşÿÿÿÿ
+r	css:S4666­0"WUnexpected duplicate selector ".nhsuk-header__navigation-link", first used at line 6159(©Â‹Êşÿÿÿÿ
+§	css:S4666Ü0"‹Unexpected duplicate selector ".nhsuk-header__navigation-link:focus, .nhsuk-header__navigation-link:focus:visited", first used at line 6218(¶­Óùÿÿÿÿ
+Ù	css:S46662"½Unexpected duplicate selector ".nhsuk-header__menu-list .nhsuk-header__navigation-link:focus, .nhsuk-header__menu-list .nhsuk-header__navigation-link:focus:visited", first used at line 6396(¢‚Ìùÿÿÿÿ
+ä	css:S4666æ2"ÍUnexpected duplicate selector ".nhsuk-header__navigation--white .nhsuk-header__navigation-link:focus, .nhsuk-header__navigation--white .nhsuk-header__navigation-link:focus:visited", first used at line 6484(úßé
+×	css:S4666÷3"ÀUnexpected duplicate selector ".nhsuk-header--white .nhsuk-header__service-logo:focus, .nhsuk-header--white .nhsuk-header__service-logo:focus:visited,
+.nhsuk-header--white .nhsuk-header__service-name[href]:focus,
+.nhsuk-header--white .nhsuk-header__service-name[href]:focus:visited,
+.nhsuk-header--white .nhsuk-header__account-button:focus,
+.nhsuk-header--white .nhsuk-header__account-button:focus:visited,
+.nhsuk-header--white .nhsuk-header__account-link:focus,
+.nhsuk-header--white .nhsuk-header__account-link:focus:visited", first used at line 6605 (no-duplicate-selectors)(ù„Æí
+o	css:S4666Ó4"YUnexpected duplicate selector ".nhsuk-header__organisation-name", first used at line 6735(ú¨´ñ
+o	css:S4666×4"YUnexpected duplicate selector ".nhsuk-header__organisation-name", first used at line 6735(ú¨´ñ
+	css:S4666ò4"dUnexpected duplicate selector ".nhsuk-header__organisation-name-descriptor", first used at line 6766(Óıæûÿÿÿÿ
+	css:S4666ö4"dUnexpected duplicate selector ".nhsuk-header__organisation-name-descriptor", first used at line 6766(Óıæûÿÿÿÿ
+c	css:S46666"MUnexpected duplicate selector ".nhsuk-hero__wrapper", first used at line 6917(µÊ®€
+Z	css:S4666¨7"DUnexpected duplicate selector ".nhsuk-hint", first used at line 7074(øÑ†í
+Z	css:S4666¬7"DUnexpected duplicate selector ".nhsuk-hint", first used at line 7074(øÑ†í
+[	css:S4666Ó7"EUnexpected duplicate selector ".nhsuk-image", first used at line 7116(œç†’
+[	css:S4666Ü7"EUnexpected duplicate selector ".nhsuk-image", first used at line 7116(œç†’
+i	css:S46668"NUnexpected duplicate selector ".nhsuk-image__caption", first used at line 7165(¬¿£Åùÿÿÿÿ
+`	css:S4666¡8"EUnexpected duplicate selector ".nhsuk-input", first used at line 7189(ĞÃÑâùÿÿÿÿ
+`	css:S4666¥8"EUnexpected duplicate selector ".nhsuk-input", first used at line 7189(ĞÃÑâùÿÿÿÿ
+’	css:S4666Œ9"|Unexpected duplicate selector ".nhsuk-input__prefix,
+.nhsuk-input__suffix", first used at line 7293 (no-duplicate-selectors)(–© ş
+’	css:S4666‘9"|Unexpected duplicate selector ".nhsuk-input__prefix,
+.nhsuk-input__suffix", first used at line 7293 (no-duplicate-selectors)(–© ş
+`	css:S4666Ø9"JUnexpected duplicate selector ".nhsuk-inset-text", first used at line 7371(áº‹
+`	css:S4666á9"JUnexpected duplicate selector ".nhsuk-inset-text", first used at line 7371(áº‹
+`	css:S4666ê9"JUnexpected duplicate selector ".nhsuk-inset-text", first used at line 7371(áº‹
+[	css:S4666ş9"EUnexpected duplicate selector ".nhsuk-label", first used at line 7417(ÃÑ±
+[	css:S4666‚:"EUnexpected duplicate selector ".nhsuk-label", first used at line 7417(ÃÑ±
+]	css:S4666Û:"HUnexpected duplicate selector ".nhsuk-label--s", first used at line 7510(Êˆ™}
+n	css:S4666÷:"SUnexpected duplicate selector ".nhsuk-notification-banner", first used at line 7539(ˆ§€Éûÿÿÿÿ
+n	css:S4666û:"SUnexpected duplicate selector ".nhsuk-notification-banner", first used at line 7539(ˆ§€Éûÿÿÿÿ
+n	css:S4666;"SUnexpected duplicate selector ".nhsuk-notification-banner", first used at line 7539(ˆ§€Éûÿÿÿÿ
+p	css:S4666¬;"ZUnexpected duplicate selector ".nhsuk-notification-banner__title", first used at line 7590(ÿ³°Õ
+p	css:S4666°;"ZUnexpected duplicate selector ".nhsuk-notification-banner__title", first used at line 7590(ÿ³°Õ
+w	css:S4666à;"\Unexpected duplicate selector ".nhsuk-notification-banner__heading", first used at line 7643(×Ôèüÿÿÿÿ
+w	css:S4666ä;"\Unexpected duplicate selector ".nhsuk-notification-banner__heading", first used at line 7643(×Ôèüÿÿÿÿ
+e	css:S4666Å<"JUnexpected duplicate selector ".nhsuk-pagination", first used at line 7740(æ³Ö¸øÿÿÿÿ
+f	css:S4666÷<"PUnexpected duplicate selector ".nhsuk-pagination__link", first used at line 7792(ÊÕí„
+f	css:S4666="PUnexpected duplicate selector ".nhsuk-pagination__link", first used at line 7819(ÊÕí„
+k	css:S4666Ğ="PUnexpected duplicate selector ".nhsuk-pagination__page", first used at line 7883(Á•şÿşÿÿÿÿ
+`	css:S4666ğ="EUnexpected duplicate selector ".nhsuk-panel", first used at line 7912(¡ºÁ‰ıÿÿÿÿ
+`	css:S4666ƒ>"EUnexpected duplicate selector ".nhsuk-panel", first used at line 7912(¡ºÁ‰ıÿÿÿÿ
+g	css:S4666Ÿ>"LUnexpected duplicate selector ".nhsuk-panel__title", first used at line 7963(ÀÑÍ‰ûÿÿÿÿ
+g	css:S4666²>"LUnexpected duplicate selector ".nhsuk-panel__title", first used at line 7963(ÀÑÍ‰ûÿÿÿÿ
+k	css:S4666É>"PUnexpected duplicate selector ".nhsuk-checkboxes__item", first used at line 8000(ÿã÷“ÿÿÿÿÿ
+k	css:S4666Í>"PUnexpected duplicate selector ".nhsuk-checkboxes__item", first used at line 8000(ÿã÷“ÿÿÿÿÿ
+i	css:S4666´?"SUnexpected duplicate selector ".nhsuk-checkboxes__divider", first used at line 8109(±ÛÆ§
+i	css:S4666¸?"SUnexpected duplicate selector ".nhsuk-checkboxes__divider", first used at line 8109(±ÛÆ§
+m	css:S4666Ñ?"WUnexpected duplicate selector ".nhsuk-checkboxes__conditional", first used at line 8139(×Š…Š
+b	css:S4666ì?"LUnexpected duplicate selector ".nhsuk-radios__item", first used at line 8163(àŒ•ø
+b	css:S4666ğ?"LUnexpected duplicate selector ".nhsuk-radios__item", first used at line 8163(àŒ•ø
+e	css:S4666æ@"OUnexpected duplicate selector ".nhsuk-radios__divider", first used at line 8287(¤üø
+e	css:S4666ê@"OUnexpected duplicate selector ".nhsuk-radios__divider", first used at line 8287(¤üø
+i	css:S4666ƒA"SUnexpected duplicate selector ".nhsuk-radios__conditional", first used at line 8317(ÓçÊê
+\	css:S4666 A"FUnexpected duplicate selector ".nhsuk-select", first used at line 8341(Ó¼Ù½
+\	css:S4666¤A"FUnexpected duplicate selector ".nhsuk-select", first used at line 8341(Ó¼Ù½
+g	css:S4666ñA"LUnexpected duplicate selector ".nhsuk-summary-list", first used at line 8429(‹„ïºùÿÿÿÿ
+g	css:S4666õA"LUnexpected duplicate selector ".nhsuk-summary-list", first used at line 8429(‹„ïºùÿÿÿÿ
+g	css:S4666ˆB"LUnexpected duplicate selector ".nhsuk-summary-list", first used at line 8429(‹„ïºùÿÿÿÿ
+e	css:S4666±C"OUnexpected duplicate selector ".nhsuk-table-container", first used at line 8617(©‚¥
+	css:S4666ÆC"wUnexpected duplicate selector ".nhsuk-table,
+.nhsuk-table-responsive", first used at line 8639 (no-duplicate-selectors)(ğÂÇ¯
+	css:S4666ËC"wUnexpected duplicate selector ".nhsuk-table,
+.nhsuk-table-responsive", first used at line 8639 (no-duplicate-selectors)(ğÂÇ¯
+	css:S4666áC"wUnexpected duplicate selector ".nhsuk-table,
+.nhsuk-table-responsive", first used at line 8639 (no-duplicate-selectors)(ğÂÇ¯
+x	css:S4666ÌD"]Unexpected duplicate selector ".nhsuk-table__panel-with-heading-tab", first used at line 8764(Ó¤íÊøÿÿÿÿ
+x	css:S4666ÛD"]Unexpected duplicate selector ".nhsuk-table__panel-with-heading-tab", first used at line 8764(Ó¤íÊøÿÿÿÿ
+x	css:S4666äD"]Unexpected duplicate selector ".nhsuk-table__panel-with-heading-tab", first used at line 8764(Ó¤íÊøÿÿÿÿ
+m	css:S4666E"RUnexpected duplicate selector ".nhsuk-table__heading-tab", first used at line 8819(•µÏñıÿÿÿÿ
+^	css:S4666ˆF"CUnexpected duplicate selector ".nhsuk-tag", first used at line 8954(æÀ®¯ıÿÿÿÿ
+^	css:S4666ŒF"CUnexpected duplicate selector ".nhsuk-tag", first used at line 8954(æÀ®¯ıÿÿÿÿ
+_	css:S4666æF"IUnexpected duplicate selector ".nhsuk-task-list", first used at line 9056(ôÈÏ
+_	css:S4666êF"IUnexpected duplicate selector ".nhsuk-task-list", first used at line 9056(ôÈÏ
+_	css:S4666ıF"IUnexpected duplicate selector ".nhsuk-task-list", first used at line 9056(ôÈÏ
+½	css:S4666®G"¡Unexpected duplicate selector ".nhsuk-task-list__status--completed,
+.nhsuk-task-list__status--cannot-start-yet", first used at line 9126 (no-duplicate-selectors)(…·”Òıÿÿÿÿ
+c	css:S4666åG"HUnexpected duplicate selector ".nhsuk-textarea", first used at line 9176(¶¶Üúÿÿÿÿ
+c	css:S4666éG"HUnexpected duplicate selector ".nhsuk-textarea", first used at line 9176(¶¶Üúÿÿÿÿ
+j	css:S4666˜H"OUnexpected duplicate selector ".nhsuk-warning-callout", first used at line 9224(ÊºÏ±ıÿÿÿÿ
+j	css:S4666§H"OUnexpected duplicate selector ".nhsuk-warning-callout", first used at line 9224(ÊºÏ±ıÿÿÿÿ
+j	css:S4666°H"OUnexpected duplicate selector ".nhsuk-warning-callout", first used at line 9224(ÊºÏ±ıÿÿÿÿ
+q	css:S4666ÇH"VUnexpected duplicate selector ".nhsuk-warning-callout__label", first used at line 9273(Áªˆ–ıÿÿÿÿ
+_	css:S4666ŠI"DUnexpected duplicate selector ".nhsuk-tabs", first used at line 9345(¨áƒùÿÿÿÿ
+f	css:S4666˜I"KUnexpected duplicate selector ".nhsuk-tabs__title", first used at line 9363(ÿô¹Şúÿÿÿÿ
+f	css:S4666œI"KUnexpected duplicate selector ".nhsuk-tabs__title", first used at line 9363(ÿô¹Şúÿÿÿÿ
+e	css:S4666µI"JUnexpected duplicate selector ".nhsuk-tabs__list", first used at line 9391(Àõ¼…úÿÿÿÿ
+j	css:S4666ÂI"OUnexpected duplicate selector ".nhsuk-tabs__list-item", first used at line 9406(µİ“üÿÿÿÿ
+j	css:S4666ÆI"OUnexpected duplicate selector ".nhsuk-tabs__list-item", first used at line 9406(µİ“üÿÿÿÿ
+~	css:S4666šJ"cUnexpected duplicate selector ".nhsuk-frontend-supported .nhsuk-tabs__tab", first used at line 9495(™£¿³ûÿÿÿÿ
+{	css:S4666ÔJ"eUnexpected duplicate selector ".nhsuk-frontend-supported .nhsuk-tabs__panel", first used at line 9550(Öğ›ç
+j	css:S4666èJ"OUnexpected duplicate selector ".nhsuk-list--border li", first used at line 1783(Ñ¯ìñùÿÿÿÿ
+j	css:S4666úJ"TUnexpected duplicate selector ".nhsuk-related-nav__heading", first used at line 9590(Êáµó
+l	css:S4666‘K"QUnexpected duplicate selector ".nhsuk-related-nav__list", first used at line 9613(¹ˆ½¸ıÿÿÿÿ
+j	css:S4666™M"OUnexpected duplicate selector ".autocomplete__wrapper", first used at line 9637(•ÙŞŞüÿÿÿÿ
