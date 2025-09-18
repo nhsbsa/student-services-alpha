@@ -1,0 +1,9 @@
+
+„Web:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(Üˆ“˜J$230141af-e0ad-4c99-abcf-2643333329d6
+”	Web:S6819,"MUse <img> instead of the img role to ensure accessibility across all devices.(Öö¬ñøÿÿÿÿ8Í¸áí‰3J$88dbfd68-09e0-4eaa-b7b1-a9f93fdae948
+ª	Web:S6822V"hThe element ul has an implicit role of list. Definig this explicitly is redundant and should be avoided.(øö°ğ8Î¸áí‰3J$74ba7ab8-f562-46e6-a952-cd61c195b000
+­	Web:S6822X"lThe element li has an implicit role of listitem. Definig this explicitly is redundant and should be avoided.(®±’A8Î¸áí‰3J$920119f6-f73e-49da-98bb-796c9de4ac24
+Ë	Web:S6793Z"ƒThe value of the attribute "aria-current" must be a single token from the following: step, location, date, true, false, page, time.(¿ª³•øÿÿÿÿ8Ï¸áí‰3J$8a1b91dd-cb2a-411a-b27a-3dcc56f9b713
+­	Web:S6822^"lThe element li has an implicit role of listitem. Definig this explicitly is redundant and should be avoided.(®±’A8Ï¸áí‰3J$705beb79-098d-447d-ac5f-20107f5b1745
+©	Web:S6822`"gThe element a has an implicit role of link. Definig this explicitly is redundant and should be avoided.(öÄŠ¢8Ï¸áí‰3J$4071df12-4a33-4dff-9a5f-193e05142fd3
+	Web:S6819¢"VUse <img> instead of the presentation role to ensure accessibility across all devices.(•«Èÿÿÿÿÿ8Ï¸áí‰3J$62325f86-a0bf-42be-97ce-0bac5d67b509

@@ -1,0 +1,13 @@
+
+‰Web:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(™›ª¤ÿÿÿÿÿJ$e86b53d4-00f8-4a38-9f7b-9364ccb1900f
+”	Web:S6819)"MUse <img> instead of the img role to ensure accessibility across all devices.(üéüÿÿÿÿ8ØË³î‰3J$41dbfc54-c6f7-4e5f-b061-b1d7fec0d1c9
+ª	Web:S6822T"hThe element ul has an implicit role of list. Definig this explicitly is redundant and should be avoided.(øö°ğ8ØË³î‰3J$ee930017-185d-4135-867b-3196959e67da
+­	Web:S6822V"lThe element li has an implicit role of listitem. Definig this explicitly is redundant and should be avoided.(®±’A8ØË³î‰3J$ca21ee39-7fd0-4416-996c-0cfa5a1b0ffd
+Ë	Web:S6793X"ƒThe value of the attribute "aria-current" must be a single token from the following: step, location, date, true, false, page, time.(¿ª³•øÿÿÿÿ8ÙË³î‰3J$29ec7715-3766-4363-b6e3-08a911ceb95e
+­	Web:S6822\"lThe element li has an implicit role of listitem. Definig this explicitly is redundant and should be avoided.(®±’A8ÙË³î‰3J$ac13923c-d2b8-4e16-95a5-a393f255d3cc
+®	Web:S6822^"gThe element a has an implicit role of link. Definig this explicitly is redundant and should be avoided.(ïßºııÿÿÿÿ8ÚË³î‰3J$f9e36a97-8490-4304-8406-4c0a016d01d2
+¨,Web:MouseEventWithoutKeyboardEquivalentCheck"BAdd a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <span> tag.(ÀéÎ­8ÛË³î‰3J$22500303-907d-435e-9162-8fd08afcb245
+†	Web:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ÀéÎ­8ÛË³î‰3J$26130934-5009-4903-aaaa-99747acd3061
+¨,Web:MouseEventWithoutKeyboardEquivalentCheck¨"BAdd a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <span> tag.(ÀéÎ­8ıÛÁó‰3J$43c6f7a4-190c-4c5a-a8b3-14f6282b6e68
+†	Web:S6848¨"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ÀéÎ­8ıÛÁó‰3J$41e7e82f-b7dd-4141-a4e8-6f6b4766e9d2
+˜	Web:S6819Ñ"VUse <img> instead of the presentation role to ensure accessibility across all devices.(ËÜÂ:8ÛË³î‰3J$319961b7-b6b8-438e-a175-f19ecc9eabed
